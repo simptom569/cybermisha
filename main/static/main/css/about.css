@@ -1084,6 +1084,25 @@ main {
     color: #ffffff;
 }
 
+.slider {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 42px;
+    border-radius: 24px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
 .cases-indecators {
     display: flex;
     justify-content: center;
