@@ -1,0 +1,31 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.header-mobile .burger');
+  const menu = document.querySelector('.header-mobile .mobile-menu');
+  const closeBtn = document.querySelector('.header-mobile .close-btn');
+
+  if (!burger || !menu) return;
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  }
+
+  document.querySelectorAll('.mobile-nav-item').forEach(item => {
+    item.addEventListener('click', () => {
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+});
+</script>

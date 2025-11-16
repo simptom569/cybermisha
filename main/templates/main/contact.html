@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/contact.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_header.html' %}
+            <main>
+                <section>
+                    <div class="contact">
+                        <h1 class="contact-title">Контактная</br>информация</h1>
+                        <div class="contact-line-container">
+                            <img src="{% static 'main/img/hero_eclipse.svg' %}" alt="" class="contact-line">
+                            <img src="{% static 'main/img/hero_eclipse_background.svg' %}" alt="" class="contact-line-back">
+                        </div>
+                        <div class="contacts-blocks">
+                            <div class="contacts-block">
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                            </div>
+                            <div class="contacts-block">
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                            </div>
+                            <div class="contacts-block contacts-block-max">
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Тг-канал Кибер-Миша</div>
+                                    <div class="contact-item-description">@cybermisha_team</div>
+                                </div>
+                                <img src="{% static 'main/img/qr.svg' %}" alt="" class="contact-qr">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    {% include 'main/_two_action_form.html' %}
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer-nav-container">
+                    <div class="footer-logo-container">
+                        <img src="{% static 'img/logo.png' %}" alt="" class="footer-logo">
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav-block">
+                            <p class="footer-nav-item-title">НАВИГАЦИЯ</p>
+                            <div class="footer-nav-items">
+                                <p class="footer-nav-item">Обучение</p>
+                                <p class="footer-nav-item">Эксперт курса</p>
+                                <p class="footer-nav-item">Команда</p>
+                                <p class="footer-nav-item">Программа</p>
+                            </div>
+                        </div>
+                        <div class="footer-nav-block">
+                            <p class="footer-nav-item-title">ДОКУМЕНТЫ</p>
+                            <div class="footer-nav-items doc">
+                                <p class="footer-nav-item">Политика конфиденциальности</p>
+                                <p class="footer-nav-item">Пользовательское соглашение</p>
+                                <p class="footer-nav-item">Публичная оферта</p>
+                            </div>
+                        </div>
+                        <div class="footer-nav-block">
+                            <p class="footer-nav-item-title">КОНТАКТЫ</p>
+                            <div class="footer-nav-items footer-nav-items-contacts">
+                                <p class="footer-nav-item">телефон +7 (800) 333-48-77</br>(звонок бесплатный)</p>
+                                <p class="footer-nav-item">телеграм-канал кибер-миша</br>@cyber_misha</p>
+                                <p class="footer-nav-item">служба заботы кибер-миша</br>@cybermishahelp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav-container">
+                    <p class="footer-description">© 2025 Black Mesa IT.</br>Все права защищены.</p>
+                    <p class="footer-description">ИП</br>ИНН: 7838107523 | ОГРН: 783801001</p>
+                    <p class="footer-description">Лицензия на образовательную деятельность</br>Nº Л035-01271-78/02037422 от 26.03.2025</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

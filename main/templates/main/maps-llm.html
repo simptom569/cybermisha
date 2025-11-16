@@ -1,0 +1,395 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/maps-llm.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_header.html' %}
+        </div>
+    </div>
+    <main>
+        <div class="wrapper">
+            <img src="{% static 'main/img/hero_back.png' %}" alt="" class="hero-back">
+            <div class="container">
+                <section>
+                    <div class="hero">
+                        <p class="hero-additional">Консалтинговая программа</p>
+                        <p class="hero-title">ИИ-трансформация</p>
+                        <p class="hero-description">программа по ии-трансформации корпоративной культуры и интеграции ии в бизнес-процессы</p>
+                        <button class="hero-but">Оставить заявку</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="additional">
+                        <p class="additional-title">Статистика внедрения LLM</p>
+                        <div class="additional-container">
+                            <div class="additional-item">
+                                <p class="additional-item-title">67%</p>
+                                <p class="additional-item-text">проектов не достигают целей</p>
+                            </div>
+                            <div class="additional-item">
+                                <p class="additional-item-title">67%</p>
+                                <p class="additional-item-text">проектов не достигают целей</p>
+                            </div>
+                            <div class="additional-item">
+                                <p class="additional-item-title">67%</p>
+                                <p class="additional-item-text">проектов не достигают целей</p>
+                            </div>
+                        </div>
+                        <p class="additional-title">Основные вызовы внедрения</p>
+                        <div class="additional-container">
+                            <div class="additional-two-item">
+                                <div class="additional-two-item-block-num">
+                                    <p class="additional-two-item-num">01</p>
+                                </div>
+                                <p class="additional-two-item-text">Отсутствие</br>стратегии</p>
+                            </div>
+                            <div class="additional-two-item">
+                                <div class="additional-two-item-block-num">
+                                    <p class="additional-two-item-num">01</p>
+                                </div>
+                                <p class="additional-two-item-text">Отсутствие</br>стратегии</p>
+                            </div>
+                            <div class="additional-two-item">
+                                <div class="additional-two-item-block-num">
+                                    <p class="additional-two-item-num">01</p>
+                                </div>
+                                <p class="additional-two-item-text">Отсутствие</br>стратегии</p>
+                            </div>
+                            <div class="additional-two-item">
+                                <div class="additional-two-item-block-num">
+                                    <p class="additional-two-item-num">01</p>
+                                </div>
+                                <p class="additional-two-item-text">Отсутствие</br>стратегии</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="maps">
+                        <h2 class="maps-title">что такое карта внедрения LLM?</h2>
+                        <div class="maps-container">
+                            <div class="maps-container-text">
+                                <p class="maps-container-title"><span>Карта внедрения LLM</span> — это стратегический инструмент планирования и визуализации пути внедрения LLM-технологий в бизнес-процессы организации</p>
+                                <div class="maps-container-text-item-block">
+                                    <p class="maps-container-text-item-block-title">Ключевые характеристики:</p>
+                                    <ul>
+                                        <li>Комплексный подход к внедрению LLM</li>
+                                        <li>Учет технических и организационных аспектов</li>
+                                        <li>Поэтапное планирование с четкими вехами</li>
+                                        <li>Система измерения результатов</li>
+                                        <li>Адаптация под специфику бизнеса</li>
+                                    </ul>
+                                </div>
+                                <div class="maps-container-text-item-block">
+                                    <p class="maps-container-text-item-block-title">Ключевые характеристики:</p>
+                                    <p class="maps-container-text-item-block-text">В отличие от общих технологических дорожных карт, карта внедрения LLM учитывает специфику языковых моделей</br>и особенности их интеграции в бизнес-процессы</p>
+                                </div>
+                            </div>
+                            <div class="maps-container-img">
+                                <p class="maps-container-text-item-block-title">STRATEGIC ANALYSIS FOR LLM IMPLEMENTATION</p>
+                                <div class="maps-card">
+                                    <img src="{% static 'main/img/maps-llm.png' %}" alt="" class="maps-card-img">
+                                </div>
+                                <div class="maps-container-text-item-block">
+                                    <p class="maps-container-text-item-block-title maps-container-text-item-block-title-top">Компоненты карты внедрения LLM</p>
+                                    <div class="maps-container-text-item-block-items">
+                                        <div>
+                                            <div class="maps-container-item-block-img">
+                                                <p class="maps-container-text-item-block-text">Стратегическое</br>видение</p>
+                                            </div>
+                                            <div class="maps-container-item-block-img">
+                                                <p class="maps-container-text-item-block-text">Стратегическое</br>видение</p>
+                                            </div>
+                                            <div class="maps-container-item-block-img">
+                                                <p class="maps-container-text-item-block-text">Стратегическое</br>видение</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="maps-container-item-block-img">
+                                                <p class="maps-container-text-item-block-text">Дорожная карта внедрения</p>
+                                            </div>
+                                            <div class="maps-container-item-block-img">
+                                                <p class="maps-container-text-item-block-text">Стратегическое видение</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="steps">
+                        <h2 class="steps-title">Преимущества карты внедрения LLM</h2>
+
+                        <div class="steps-container">
+
+                            <div class="step-item">
+                                <div class="step-item-num">01</div>
+                                <p class="step-item-title">Снижение рисков внедрения</p>
+                                <p class="step-item-description">Структурированный подход снижает риск неудачного внедрения до 70% за счёт предварительного анализа и планирования.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">02</div>
+                                <p class="step-item-title">Ускорение внедрения</p>
+                                <p class="step-item-description">Чёткий план действий ускоряет процесс на 40% благодаря оптимизации ресурсов и процессов.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">03</div>
+                                <p class="step-item-title">Расчёт бюджета</p>
+                                <p class="step-item-description">Понимание реальных затрат и рыночных эффектов. Определяется, где можно не платить, а где инвестиции оправданы.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">04</div>
+                                <p class="step-item-title">Обзор инструментов</p>
+                                <p class="step-item-description">Детальный анализ инструментов LLM и рекомендаций для команды и руководства.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">05</div>
+                                <p class="step-item-title">Измеримые результаты</p>
+                                <p class="step-item-description">Система метрик и KPI позволяет объективно оценивать прогресс и эффективность внедрения.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">06</div>
+                                <p class="step-item-title">Осознанность процессов</p>
+                                <p class="step-item-description">Понимание, где LLM эффективна, а где нужны другие AI-технологии. Чёткое выделение областей применения.</p>
+                            </div>
+                        </div>
+                        <p class="step-description"><span>Ключевая проблема:</span></br></br>Люди не понимают, где LLM работает хорошо, а где плохо. Карта внедрения решает эту проблему через структурированный анализ и планирование</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="structure">
+                        <h2 class="structure-title">Структура карты внедрения LLM</h2>
+
+                        <div class="structure-diagram">
+                            <img class="structure-diagram-img" src="{% static 'main/img/maps-llm.png' %}" alt="">
+                        </div>
+
+                        <div class="structure-container">
+
+                            <div class="structure-item">
+                                <p class="structure-item-title">Стратегический анализ</p>
+                                <p class="structure-item-description">
+                                    • Анализ бизнес-целей<br>
+                                    • Выявление потенциальных сценариев<br>
+                                    • Оценка готовности организации
+                                </p>
+                            </div>
+
+                            <div class="structure-item">
+                                <p class="structure-item-title">Технологический стек</p>
+                                <p class="structure-item-description">
+                                    • Выбор оптимальных LLM-моделей<br>
+                                    • Определение архитектуры решения<br>
+                                    • Оценка технических рисков
+                                </p>
+                            </div>
+
+                            <div class="structure-item">
+                                <p class="structure-item-title">Операционная модель</p>
+                                <p class="structure-item-description">
+                                    • Формирование команды внедрения<br>
+                                    • Определение ролей и ответственности<br>
+                                    • Планирование обучения персонала
+                                </p>
+                            </div>
+
+                            <div class="structure-item">
+                                <p class="structure-item-title">Дорожная карта внедрения</p>
+                                <p class="structure-item-description">
+                                    • Поэтапный план внедрения<br>
+                                    • Определение ключевых вех<br>
+                                    • Планирование ресурсов
+                                </p>
+                            </div>
+
+                            <div class="structure-item">
+                                <p class="structure-item-title">Система измерения результатов</p>
+                                <p class="structure-item-description">
+                                    • Определение KPI и метрик успеха<br>
+                                    • Разработка системы мониторинга<br>
+                                    • Планирование корректирующих действий
+                                </p>
+                            </div>
+
+                            <div class="structure-item">
+                                <p class="structure-item-title">Управление рисками</p>
+                                <p class="structure-item-description">
+                                    • Идентификация потенциальных рисков<br>
+                                    • Разработка стратегий митигации<br>
+                                    • План реагирования на инциденты
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="analysis-block">
+                        <h2 class="analysis-title">Этап 1: Стратегический анализ</h2>
+                        <div class="analysis-content">
+                            <div class="analysis-left">
+                                <h3 class="analysis-subtitle">Цель этапа</h3>
+                                <p class="analysis-goal">
+                                    определить стратегические цели внедрения LLM и оценить 
+                                    готовность организации к изменениям
+                                </p>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Анализ бизнес-целей</p>
+                                        <p class="analysis-item-desc">
+                                            Определение ключевых бизнес-задач, которые должны
+                                            быть решены с помощью LLM-технологий
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Выявление потенциальных сценариев</p>
+                                        <p class="analysis-item-desc">
+                                            Идентификация процессов и задач, которые могут быть
+                                            оптимизированы с помощью LLM
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Оценка готовности организации</p>
+                                        <p class="analysis-item-desc">
+                                            Анализ технической инфраструктуры, компетенций персонала
+                                            и культурных аспектов
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Определение ключевых стейкхолдеров</p>
+                                        <p class="analysis-item-desc">
+                                            Выявление всех заинтересованных сторон и их ожиданий
+                                            от внедрения
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analysis-right">
+                                <h3 class="analysis-subtitle">Структура стратегического анализа</h3>
+                                <div class="analysis-flow">
+                                    <p>DATA SOURCES</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>VECTOR DATABASE</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>LLM MODELS</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>APIS</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>USER INTERFACES</p>
+                                </div>
+                                <h3 class="analysis-subtitle">Результаты этапа</h3>
+                                <ul class="analysis-results">
+                                    <li>Документ стратегического видения внедрения LLM</li>
+                                    <li>Матрица приоритизации сценариев использования</li>
+                                    <li>Отчет о готовности организации</li>
+                                    <li>План коммуникаций со стейкхолдерами</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-block">
+                        <h2 class="analysis-title">Этап 1: Стратегический анализ</h2>
+                        <div class="analysis-content">
+                            <div class="analysis-left">
+                                <h3 class="analysis-subtitle">Цель этапа</h3>
+                                <p class="analysis-goal">
+                                    определить стратегические цели внедрения LLM и оценить 
+                                    готовность организации к изменениям
+                                </p>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Анализ бизнес-целей</p>
+                                        <p class="analysis-item-desc">
+                                            Определение ключевых бизнес-задач, которые должны
+                                            быть решены с помощью LLM-технологий
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Выявление потенциальных сценариев</p>
+                                        <p class="analysis-item-desc">
+                                            Идентификация процессов и задач, которые могут быть
+                                            оптимизированы с помощью LLM
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Оценка готовности организации</p>
+                                        <p class="analysis-item-desc">
+                                            Анализ технической инфраструктуры, компетенций персонала
+                                            и культурных аспектов
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="analysis-item">
+                                    <div class="analysis-checkbox"></div>
+                                    <div class="analysis-texts">
+                                        <p class="analysis-item-title">Определение ключевых стейкхолдеров</p>
+                                        <p class="analysis-item-desc">
+                                            Выявление всех заинтересованных сторон и их ожиданий
+                                            от внедрения
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analysis-right">
+                                <h3 class="analysis-subtitle">Структура стратегического анализа</h3>
+                                <div class="analysis-flow">
+                                    <p>DATA SOURCES</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>VECTOR DATABASE</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>LLM MODELS</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>APIS</p>
+                                    <span class="flow-arrow">↓</span>
+                                    <p>USER INTERFACES</p>
+                                </div>
+                                <h3 class="analysis-subtitle">Результаты этапа</h3>
+                                <ul class="analysis-results">
+                                    <li>Документ стратегического видения внедрения LLM</li>
+                                    <li>Матрица приоритизации сценариев использования</li>
+                                    <li>Отчет о готовности организации</li>
+                                    <li>План коммуникаций со стейкхолдерами</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

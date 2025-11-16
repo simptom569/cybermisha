@@ -1,0 +1,95 @@
+name: Build and Deploy Docker Container
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        run: |
+          docker build -t cybermisha:${{ github.sha }} .
+          docker tag cybermisha:${{ github.sha }} cybermisha:latest
+
+      - name: Save Docker image
+        run: docker save cybermisha:latest | gzip > cybermisha.tar.gz
+
+      - name: Copy image to remote server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT }}
+          source: "cybermisha.tar.gz,docker-compose.yml"
+          target: "/tmp/cybermisha-deploy"
+
+      - name: Deploy on remote server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT }}
+          script: |
+            cd /tmp/cybermisha-deploy
+            docker load < cybermisha.tar.gz
+
+            # Create app directory if not exists
+            mkdir -p ~/cybermisha-app
+            mv docker-compose.yml ~/cybermisha-app/
+
+            # Create .env file if not exists
+            if [ ! -f ~/cybermisha-app/.env ]; then
+              echo "Creating .env file..."
+              cat > ~/cybermisha-app/.env << EOF
+            SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }}
+            DEBUG=False
+            ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }}
+            EOF
+            fi
+
+            # Navigate to app directory and deploy
+            cd ~/cybermisha-app
+
+            # Stop and remove old containers
+            docker compose down || true
+
+            # Start new containers
+            docker compose up -d
+
+            # Run migrations
+            docker compose exec -T web python manage.py migrate --noinput || true
+
+            # Collect static files
+            docker compose exec -T web python manage.py collectstatic --noinput || true
+
+            # Clean up
+            rm -rf /tmp/cybermisha-deploy
+
+            # Remove old images
+            docker image prune -f
+
+            echo "Deployment completed successfully!"
+
+      - name: Verify deployment
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.REMOTE_PORT }}
+          script: |
+            cd ~/cybermisha-app
+            docker compose ps

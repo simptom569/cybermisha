@@ -1,0 +1,939 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/ai-solutions.css' %}">
+</head>
+<body>
+    <div class="transition-1">
+        <div class="wrapper">
+            <div class="container">
+                {% include 'main/_header.html' %}
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="transition-1">
+            <div class="wrapper">
+                <div class="container">
+                    <section>
+                        <div class="hero">
+                            <img src="{% static 'main/img/ai_hero_background.svg' %}" alt="" class="hero-background"></img>
+                            <h1 class="hero-explanation">Корпоративные AI-решения</h1>
+                            <h2 class="hero-title">Комплексная автоматизация бизнес-процессов, интеграция искусственного интеллекта, внедрение культры использования</br>AI-технологий в компании</h2>
+                            <div class="hero-action-wrapper">
+                                <div class="hero-action-container">
+                                    <div class="hero-action-block">
+                                        <p class="hero-action-title">Количество запросов</br>в ИИ:</p>
+                                        <p class="hero-action-description">342,387</p>
+                                    </div>
+                                    <div class="hero-action-line"></div>
+                                    <div class="hero-action-block">
+                                        <p class="hero-action-title">Сэкономленные минуты</br>после внедрения ИИ:</p>
+                                        <p class="hero-action-description">97,475</p>
+                                    </div>
+                                    <div class="hero-action-line"></div>
+                                    <div class="hero-action-block">
+                                        <p class="hero-action-title">Рубли, заработанных</br>благодаря внедрению ИИ:</p>
+                                        <p class="hero-action-description">123,930</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="hero-action-button">Оставить заявку</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="transition-2">
+            <div class="wrapper">
+                <div class="container">
+                    <section>
+                        <div class="choices">
+                            <p class="choices-title">Искусственный интеллект & БИЗНЕС</p>
+                            <div class="choices-container">
+                                <div class="choice-item">
+                                    <img src="{% static 'main/img/hero_choice_item_1.svg' %}" alt="" class="choice-item-icon">
+                                    <p class="choice-item-title">Практические</br>кейсы</p>
+                                </div>
+                                <div class="choice-item">
+                                    <img src="{% static 'main/img/hero_choice_item_2.svg' %}" alt="" class="choice-item-icon">
+                                    <p class="choice-item-title">Гарантированный рост</br>производительности</p>
+                                </div>
+                                <div class="choice-item">
+                                    <img src="{% static 'main/img/hero_choice_item_3.svg' %}" alt="" class="choice-item-icon">
+                                    <p class="choice-item-title">Инженерная экспертиза</br>и поддержка 24/7</p>
+                                </div>
+                                <div class="choice-item">
+                                    <img src="{% static 'main/img/hero_choice_item_4.svg' %}" alt="" class="choice-item-icon">
+                                    <p class="choice-item-title">453 347+</p>
+                                    <p class="choice-item-title">автоматизированных</br>операций</p>
+                                </div>
+                                <div class="choice-item">
+                                    <img src="{% static 'main/img/hero_choice_item_5.svg' %}" alt="" class="choice-item-icon">
+                                    <p class="choice-item-title">30 000+</p>
+                                    <p class="choice-item-title">часов клиентского</br>времени сэкономлено</p>
+                                </div>
+                                <div class="choice-item">
+                                    <img src="{% static 'main/img/hero_choice_item_6.svg' %}" alt="" class="choice-item-icon">
+                                    <p class="choice-item-title">950 млн ₽</p>
+                                    <p class="choice-item-title">дополнительной</br>выручки создано</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <video src="{% static 'main/video/aura.mp4' %}" class="advantages-background" muted autoplay loop playsinline></video>
+            <div class="container">
+                <section>
+                    <div class="advantages">
+                        <h2 class="advantages-title">Преимущества</h2>
+                        <p class="advantages-description">Наш подход — это честность, экспертиза и настоящая вовлечённость в ваш результат</p>
+                        <div class="advantages-cards">
+                            <div class="adv-card adv1">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Прозрачность и предсказуемость</h3>
+                                <p>Чёткие модели ценообразования и этапы работы — вы контролируете каждый шаг проекта, все условия зафиксированы заранее.</p>
+                            </div>
+
+                            <div class="adv-card adv2">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Компетентность и качество</h3>
+                                <p>Глубоко погружаемся в задачи клиента, используем передовые AI-технологии, обеспечиваем многоуровневую проверку решений и быстро адаптируемся под новые бизнес-потребности.</p>
+                            </div>
+
+                            <div class="adv-card adv3">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Контроль и поддержка</h3>
+                                <p>Можно делегировать ответственность нашей команде — или работать в тесной кооперации. Поддержка и сопровождение на всех этапах, годовая гарантия на проекты.</p>
+                            </div>
+
+                            <div class="adv-card adv4">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Комплексный подход</h3>
+                                <p>Всё “под ключ”: аудит, стратегия, разработка, внедрение, поддержка и обучение — единая экосистема для Вашего бизнеса.</p>
+                            </div>
+
+                            <div class="adv-card adv5">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Простота и открытость</h3>
+                                <p>Понятная коммуникация и долгосрочное партнёрство: всегда на связи, открыты к диалогу и совместному поиску решений.</p>
+                            </div>
+
+                            <div class="adv-card adv6">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Гибкость и ответственность</h3>
+                                <p>Готовы к разным моделям сотрудничества (в том числе Fixed Price), даём гарантию и берём ответственность за результат.</p>
+                            </div>
+
+                            <div class="adv-card adv7">
+                                <img src="{% static 'main/img/corner_top_left.svg' %}" class="corner-svg corner-top-left" alt="">
+                                <img src="{% static 'main/img/corner_top_right.svg' %}" class="corner-svg corner-top-right" alt="">
+                                <img src="{% static 'main/img/corner_bottom_left.svg' %}" class="corner-svg corner-bottom-left" alt="">
+                                <img src="{% static 'main/img/corner_bottom_right.svg' %}" class="corner-svg corner-bottom-right" alt="">
+
+                                <h3>Монетизация решений</h3>
+                                <p>Помогаем не только оптимизировать, но и монетизировать внедрённые AI-решения: масштабируем под типовых клиентов, помогаем окупить инвестиции.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="solution-gradient"></div>
+            <div class="container">
+                <section>
+                    <div class="solutions solutions-desktop-only">
+                        <h2 class="solutions-title">Для кого наши AI-решения</h2>
+                        <p class="solutions-description">Корпоративные AI-решения дают максимальный эффект там, где есть сложные процессы, большие объёмы данных и высокая стоимость ошибок. Мы автоматизируем, ускоряем и оптимизируем бизнес вне зависимости от отрасли.</p>
+                        <div class="solutions-container">
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai1.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Промпредпри</br>и производство</p>
+                                <p class="solution-description">Автоматизация управления, контроль качества, оптимизация цепочек поставок</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai2.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Логистика</br>и транспорт</p>
+                                <p class="solution-description">Оптимизация маршрутов, автоматизация складов, мониторинг грузов</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai3.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">IT-компании</br>и SaaS-бизнес</p>
+                                <p class="solution-description">Внедрение AI для анализа данных, поддержки клиентов, ускорения разработки</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai4.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Финансовый сектор</br>и страхование</p>
+                                <p class="solution-description">AI-аналитика, автоматизация процессов обслуживания, antifraud, риск-мониторинг</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai5.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Образовательные</br>организации и EdTech</p>
+                                <p class="solution-description">Автоматизация обучения, интеллектуальные ассистенты, контент-генерация</p>
+                            </div>
+                            <div class="solution-item-big">
+                                <img src="{% static 'main/img/solution_big.png' %}" alt="" class="solution-item-big-image">
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai6.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Медицина</br>и фармацевтика</p>
+                                <p class="solution-description">Анализ медицинских данных, автоматизация документооборота, поддержка врачебных решений</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai7.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Ритейл, e-commerce,</br>маркетплейсы</p>
+                                <p class="solution-description">Персонализация предложений, прогнозирование спроса, управление ассортиментом</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai8.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Корпоративные</br>сервисы, HR,</br>управление персоналом</p>
+                                <p class="solution-description">Автоматизация рекрутинга, корпоративные чат-боты, AI-ассистенты для сотрудников</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai9.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Строительство</p>
+                            </div>
+                            <div class="solution-item">
+                                <p class="solution-title">Недвижимость</p>ъ
+                            </div>
+                            <div class="solution-item">
+                                <p class="solution-title">Продажи</p>
+                            </div>
+                            <div class="solution-item">
+                                <img src="{% static 'main/img/ai10.svg' %}" alt="" class="solution-icon">
+                                <p class="solution-title">Продажи</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <section>
+                    <div class="services">
+                        <p class="services-description">Если ваш бизнес связан с большим количеством данных, сложными или повторяющимися задачами — AI-решения открывают путь к новому уровню эффективности.</p>
+                        <h2 class="services-title">Перечень услуг</h2>
+                        <div class="services-container">
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">Консалтинг</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">Умные LMS</br>с LLL-тьюторами</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">Нейросотрудники</br>для бизнеса</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">Контент-завод</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">GSEO-продвижение</br>в AI</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">ИИ Обслуживание</br>клиентов</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">ИИ для коммерческих</br>предложений</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                            <div class="service-item border-bottom">
+                                <p class="service-item-title">ИИ - аналитика</br>звонков</br>и менеджеров</p>
+                                <img src="{% static 'main/img/service_arrow.svg' %}" alt="" class="service-item-icon">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="transition-3">
+            <div class="wrapper">
+                <img src="{% static 'main/img/process-1.png' %}" alt="" class="process-1">
+                <img src="{% static 'main/img/process-2.png' %}" alt="" class="process-2">
+                <img src="{% static 'main/img/world.svg' %}" alt="" class="process-3">
+                <div class="container">
+                    <section>
+                        <div class="process">
+                            <h2 class="process-title">Процесс разработки</h2>
+                            <div class="process-container">
+                                <div class="process-item">
+                                    <p class="process-item-num">01</p>
+                                    <p class="process-item-title">Анализ бизнес-процесса</p>
+                                    <p class="process-item-description">Определение задач и функционала продукта. Какие данные будет обрабатывать и с чем интегрироваться. Формирование Т3</p>
+                                </div>
+                                <div class="process-item">
+                                    <p class="process-item-num">02</p>
+                                    <p class="process-item-title">Проектирование</p>
+                                    <p class="process-item-description">Создание дизайна, определение архитектуры, выбор технологий, которые будут использоваться при разработке. Согласование ЧТ3</p>
+                                </div>
+                                <div class="process-item">
+                                    <p class="process-item-num">03</p>
+                                    <p class="process-item-title">Разработка</p>
+                                    <p class="process-item-description">Разработчики создают код программного продукта, используя выбранные технологии</p>
+                                </div>
+                                <div class="process-item">
+                                    <p class="process-item-num">04</p>
+                                    <p class="process-item-title">Тестирование</p>
+                                    <p class="process-item-description">Продукт проходит тестирование для того, чтобы убедиться, что он работает корректно и соответствует требованиям заказчика</p>
+                                </div>
+                                <div class="process-item">
+                                    <p class="process-item-num">05</p>
+                                    <p class="process-item-title">Внедрение</p>
+                                    <p class="process-item-description">Продукт устанавливается на сервера заказчика и настраивается для работы</p>
+                                </div>
+                                <div class="process-item">
+                                    <p class="process-item-num">06</p>
+                                    <p class="process-item-title">Поддержка</p>
+                                    <p class="process-item-description">Разработчики обеспечивают поддержку продукта, исправляют ошибки и добавляют новый функционал при необходимости</p>
+                                </div>
+                                <div class="process-but-container">
+                                    <div class="process-but-mask" id="sliderMask"></div>
+                                    <div class="process-but-drag" id="sliderBtn">Протяни, чтобы...</div>
+                                    <p class="process-but-text">открыть карту внедрения LLM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="commands-gradient"></div>
+                <div class="container">
+                    <section>
+                        <div class="commands">
+                            <div class="comannds-block">
+                                <h2 class="commands-title">Команда</h2>
+                                <p class="commands-description">Достигаем цели, вдохновляясь совместными усилиями</p>
+                                <p class="commands-num">>50 +сотрудников</p>
+                                <div class="commands-categories">
+                                    <div class="commands-category">Разработчики</div>
+                                    <div class="commands-category">Дизайнеры</div>
+                                    <div class="commands-category">Аналитики</div>
+                                    <div class="commands-category">Аналитики</div>
+                                    <div class="commands-category">Разработчики</div>
+                                    <div class="commands-category">Дизайнеры</div>
+                                    <div class="commands-category">Аналитики</div>
+                                    <div class="commands-category">Аналитики</div>
+                                </div>
+                            </div>
+                            <div class="commands-block">
+                                <div class="commands-items">
+                                    <div class="command-item command-item-max">
+                                        <img src="{% static 'main/img/command_1.png' %}" alt="" class="command-item-img">
+                                    </div>
+                                    <div class="command-item">
+                                        <img src="{% static 'main/img/command_2.png' %}" alt="" class="command-item-img">
+                                    </div>
+                                    <div class="command-item">
+                                        <img src="{% static 'main/img/command_3.png' %}" alt="" class="command-item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="{% static 'main/img/project_back.png' %}" alt="" class="projects-back">
+                <div class="project-gradient"></div>
+                <div class="container">
+                    <section>
+                        <div class="projects">
+                            <h2 class="projects-title">Проекты</h2>
+                            <div class="projects-container">
+                                <div class="project-item">
+                                    <p class="project-item-title">RAG База знаний</p>
+                                    <p class="project-item-description">Retrieval-Augmented Generation (RAG) объединяет LLM с внешними</br>источниками знаний для предоставления точной, контекстной релевантной информации из корпоративных баз данных и архивов</p>
+                                </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                                <div class="project-item">
+                                    <p class="project-item-title">ИИ-агенты</br>для рекрутинга</p>
+                                    <p class="project-item-description">ИИ-агенты, автоматизирующие поиск кандидатов на платформах HH.ru</br>и Rabota.ru, отбор резюме, планирование собеседований и анализ обратной связи после собеседований</p>
+                                </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                                <div class="project-item">
+                                    <p class="project-item-title">ИИ для коммерческих</br>предложений</p>
+                                    <p class="project-item-description">ИИ-агенты, использующие RAG и базы данных организации</br>для автоматической генерации персонализированных, точных</br>коммерческих предложений для любых товаров и услуг</p>
+                                </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                                <div class="project-item">
+                                    <p class="project-item-title">Умные LMS</br>с LLM-тьюторами</p>
+                                    <p class="project-item-description">Системы управления обучением (LMS), интегрированные с предварительно обученными LLM, которые выступают в роли интеллектуальных тьюторов, предоставляя персонализированный опыт обучения для сотрудников</br>и клиентов</p>
+                                </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                                <div class="project-item">
+                                    <p class="project-item-title">ИИ-генерация</br>контента</p>
+                                    <p class="project-item-description">LLM автоматически генерируют увлекательный контент для маркетинговых кампаний, внутренних коммуникаций, отчётов и резюме, адаптируясь</br>к различным аудиториям и целям</p>
+                                </div>
+                                <div class="project-item">
+                                    <p class="project-item-title">ИИ-обслуживание</br>клиентов</p>
+                                    <p class="project-item-description">ИИ-агенты, обеспечивающие автоматизированную поддержку клиентов</br>на 1-й и 2-й линии, отвечая на типовые запросы, маршрутизируя сложные случаи и предоставляя мгновенную помощь 24/7</p>
+                                </div>
+                                <div class="project-item">
+                                    <p class="project-item-title">LLM в Legal Tech</p>
+                                    <p class="project-item-description">LLM автоматизируют анализ юридических обращений, сравнение документов, генерацию документов по шаблонам и проверку соответствия, значительно ускоряя юридические процессы</p>
+                                </div>
+                                <div class="project-item">
+                                    <p class="project-item-title">Система отслеживания</br>сотрудников в общепите</p>
+                                    <p class="project-item-description">Мультимодальная ИИ-система для мониторинга активности сотрудников</br>в реальном времени, анализа соблюдения стандартов обслуживания</br>и санитарных норм, автоматического составления отчётов о продуктивности</p>
+                                </div>
+                                <div class="project-item">
+                                    <p class="project-item-title">ИИ-аналитика звонков</br>менеджеров</p>
+                                    <p class="project-item-description">Интеллектуальная система анализа звонков, определяющая психотипы клиентов и менеджеров, оценивающая соблюдение скриптов, выявляющая лучшие практики и предоставляющая рекомендации по повышению эффективности коммуникаций</p>
+                                </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="{% static 'main/img/technologies_back.png' %}" alt="" class="tehnologies-back tehnologies-back-left">
+                <img src="{% static 'main/img/technologies_back.png' %}" alt="" class="tehnologies-back tehnologies-back-right">
+                <div class="container">
+                    <section>
+                        <div class="technologies">
+                            <h2 class="technologies-title">Технологии в разработке</h2>
+                            <div class="technologies-list">
+                                <div class="techologies-line"></div>
+                                <div class="technology-item">
+                                    <p class="technology-title">Python</p>
+                                    <p class="technology-description">Django, FastAPI, Aiogram</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">RAG, LORA</p>
+                                    <p class="technology-description">Spring Framework, Quarkus, Hibernate, Ktor</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">NLP, Multi-agent</p>
+                                    <p class="technology-description">NET Core, ASP.NET MVC, ASP.NETWeb API,</br>WCF, WPF, WWF</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">PHP</p>
+                                    <p class="technology-description">Laravel, Nova</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">HTML5 & JavaScript /</be>Typescript</p>
+                                    <p class="technology-description">Angular, React, Vuejs, NextJS, PWA</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">Mobile App & TypeScript</p>
+                                    <p class="technology-description">React Native</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">Databases</p>
+                                    <p class="technology-description">PostgreSQL, MySQL, MongoDB, Elasticsearch,</br>Prometheus, Redis, MinIO</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">DevOps</p>
+                                    <p class="technology-description">Docker, Podman, Kubernetes, Helm, Swarm,</br>ELK, Grafana, Kafka, RabbitMQ, HAProxy,</br>nginx, GitLab CI/CD</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">BI</p>
+                                    <p class="technology-description">Apache Superset</p>
+                                </div>
+                                <div class="technology-item">
+                                    <p class="technology-title">Machine Learning</p>
+                                    <p class="technology-description">scikit-learn, TensorFlow, Keras, PyTorch,</br>NumPy, Pandas, Spacy, nltk, GPT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="{% static 'main/img/faq_back.png' %}" alt="" class="faq-back">
+                <div class="faq-gradint"></div>
+                <div class="container">
+                    <section>
+                        <div class="faq">
+                            <h2 class="faq-title">Вопросы и ответы</h2>
+                            <div class="faq-container">
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Нужен ли технический бэкграунд, чтобы пройти обучение по ИИ?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Кому подойдёт обучение?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Есть ли разница между онлайн и офлайн обучением?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Какие инструменты мы осваиваем?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Будет ли поддержка во время обучения?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Можно ли пройти обучение по ИИ для команды целиком?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                                <div class="faq-item">
+                                    <div class="faq-text">
+                                        <p class="faq-question">Что будет после окончания обучения?</p>
+                                        <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                                    </div>
+                                    <div class="faq-answer-wrapper">
+                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-line"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="container">
+                    <section>
+                        {% include 'main/_two_action_form.html' %}
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="transition-3">
+        <div class="wrapper">
+            <div class="container">
+                <footer class="footer">
+                    <div class="footer-nav-container">
+                        <div class="footer-logo-container">
+                            <img src="{% static 'img/logo.png' %}" alt="" class="footer-logo">
+                        </div>
+                        <div class="footer-nav">
+                            <div class="footer-nav-block">
+                                <p class="footer-nav-item-title">НАВИГАЦИЯ</p>
+                                <div class="footer-nav-items">
+                                    <p class="footer-nav-item">Обучение</p>
+                                    <p class="footer-nav-item">Эксперт курса</p>
+                                    <p class="footer-nav-item">Команда</p>
+                                    <p class="footer-nav-item">Программа</p>
+                                </div>
+                            </div>
+                            <div class="footer-nav-block">
+                                <p class="footer-nav-item-title">ДОКУМЕНТЫ</p>
+                                <div class="footer-nav-items doc">
+                                    <p class="footer-nav-item">Политика конфиденциальности</p>
+                                    <p class="footer-nav-item">Пользовательское соглашение</p>
+                                    <p class="footer-nav-item">Публичная оферта</p>
+                                </div>
+                            </div>
+                            <div class="footer-nav-block">
+                                <p class="footer-nav-item-title">КОНТАКТЫ</p>
+                                <div class="footer-nav-items footer-nav-items-contacts">
+                                    <p class="footer-nav-item">телефон +7 (800) 333-48-77</br>(звонок бесплатный)</p>
+                                    <p class="footer-nav-item">телеграм-канал кибер-миша</br>@cyber_misha</p>
+                                    <p class="footer-nav-item">служба заботы кибер-миша</br>@cybermishahelp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-nav-container">
+                        <p class="footer-description">© 2025 Black Mesa IT.</br>Все права защищены.</p>
+                        <p class="footer-description">ИП</br>ИНН: 7838107523 | ОГРН: 783801001</p>
+                        <p class="footer-description">Лицензия на образовательную деятельность</br>Nº Л035-01271-78/02037422 от 26.03.2025</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateBorders() {
+            const items = document.querySelectorAll('.choice-item');
+            const container = document.querySelector('.choices-container');
+
+            items.forEach(item => {
+                item.classList.remove('border-right', 'border-bottom');
+            });
+
+            const rows = [];
+            let currentRow = [];
+            let lastTop = null;
+
+            items.forEach((item, index) => {
+                const top = item.offsetTop;
+
+                if (lastTop !== null && top !== lastTop) {
+                    rows.push(currentRow);
+                    currentRow = [];
+                }
+
+                currentRow.push({ element: item, index });
+                lastTop = top;
+
+                if (index === items.length - 1) {
+                    rows.push(currentRow);
+                }
+            });
+
+            rows.forEach((row, rowIndex) => {
+                row.forEach((item, colIndex) => {
+                    if (rowIndex < rows.length - 1) {
+                        item.element.classList.add('border-bottom');
+                    }
+
+                    if (colIndex < row.length - 1) {
+                        item.element.classList.add('border-right');
+                    }
+                });
+            });
+        }
+
+        window.addEventListener('load', updateBorders);
+        window.addEventListener('resize', updateBorders);
+
+
+        const burger = document.querySelector('.header-mobile .burger');
+const menu = document.querySelector('.header-mobile .mobile-menu');
+const closeBtn = document.querySelector('.header-mobile .close-btn');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
+});
+
+document.querySelectorAll('.mobile-nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+});
+
+
+
+
+function updateBorders() {
+            const items = document.querySelectorAll('.service-item');
+            const container = document.querySelector('.service-container');
+
+            items.forEach(item => {
+                item.classList.remove('border-right');
+            });
+
+            const rows = [];
+            let currentRow = [];
+            let lastTop = null;
+
+            items.forEach((item, index) => {
+                const top = item.offsetTop;
+
+                if (lastTop !== null && top !== lastTop) {
+                    rows.push(currentRow);
+                    currentRow = [];
+                }
+
+                currentRow.push({ element: item, index });
+                lastTop = top;
+
+                if (index === items.length - 1) {
+                    rows.push(currentRow);
+                }
+            });
+
+            rows.forEach((row, rowIndex) => {
+                row.forEach((item, colIndex) => {
+
+                    if (colIndex < row.length - 1) {
+                        item.element.classList.add('border-right');
+                    }
+                });
+            });
+        }
+
+        window.addEventListener('load', updateBorders);
+        window.addEventListener('resize', updateBorders);
+
+
+
+
+
+
+   const faqItems = document.querySelectorAll('.faq-item');
+        
+        window.addEventListener('load', () => {
+            faqItems.forEach((item, index) => {
+                const wrapper = item.querySelector('.faq-answer-wrapper');
+                const answer = item.querySelector('.faq-answer');
+
+                const height = answer.offsetHeight;
+                if (index === 0) {
+                    wrapper.style.maxHeight = height + 25 + 'px';
+                }
+            });
+        });
+        
+        faqItems.forEach((item, index) => {
+            const faqText = item.querySelector('.faq-text');
+            const wrapper = item.querySelector('.faq-answer-wrapper');
+            const answer = item.querySelector('.faq-answer');
+            const faqIcon = item.querySelector('.faq-icon');
+
+            if (index === 0) {
+                requestAnimationFrame(() => {
+                    const height = answer.offsetHeight;
+                    wrapper.style.maxHeight = (height + 25) + 'px';
+                });
+            }
+
+            faqText.addEventListener('click', () => {
+                const isOpen = wrapper.style.maxHeight && wrapper.style.maxHeight !== '0px';
+
+                faqItems.forEach((otherItem) => {
+                    if (otherItem !== item) {
+                        const otherWrapper = otherItem.querySelector('.faq-answer-wrapper');
+                        const otherIcon = otherItem.querySelector('.faq-icon');
+                        const otherAnswer = otherItem.querySelector('.faq-answer');
+                        
+                        otherWrapper.style.maxHeight = otherAnswer.offsetHeight + 25 + 'px';
+                        setTimeout(() => {
+                            otherWrapper.style.maxHeight = '0px';
+                        }, 10);
+                        otherIcon.classList.remove('active');
+                    }
+                });
+
+                if (isOpen) {
+                    wrapper.style.maxHeight = '0px';
+                    faqIcon.classList.remove('active');
+                } else {
+                    const height = answer.offsetHeight;
+                    wrapper.style.maxHeight = height + 25 + 'px';
+                    faqIcon.classList.add('active');
+                }
+            });
+        });
+
+
+
+
+const btn = document.getElementById("sliderBtn");
+const mask = document.getElementById("sliderMask");
+const container = document.querySelector(".process-but-container");
+
+let isDragging = false;
+let startX = 0;
+let currentX = 0;
+let hasTriggered = false;
+
+var maxDistance = container.clientWidth - btn.clientWidth - 4;
+const threshold = maxDistance - 5;
+
+function handleStart(e) {
+  isDragging = true;
+  hasTriggered = false;
+  startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+  currentX = startX;
+  
+  btn.style.cursor = "grabbing";
+  btn.style.transition = "none";
+  mask.style.transition = "none";
+}
+
+function handleMove(e) {
+  if (!isDragging) return;
+  
+  e.preventDefault();
+  currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+  
+  const deltaX = currentX - startX;
+  let newLeft = Math.max(0, Math.min(maxDistance, deltaX));
+  
+  btn.style.left = `${newLeft}px`;
+  mask.style.width = `${newLeft}px`;
+}
+
+function handleEnd() {
+  if (!isDragging) return;
+  
+  isDragging = false;
+  btn.style.cursor = "grab";
+  
+  const currentLeft = parseFloat(btn.style.left) || 0;
+  
+  if (currentLeft >= threshold && !hasTriggered) {
+    hasTriggered = true;
+    console.log("✅ Свайп выполнен! Открываем карту внедрения LLM");
+    
+    btn.style.transition = "left 0.2s ease-out";
+    btn.style.left = `${maxDistance}px`;
+    
+    mask.style.transition = "width 0.2s ease-out";
+    mask.style.width = `${maxDistance}px`;
+  } else {
+    btn.style.transition = "left 0.3s ease-out";
+    btn.style.left = "0px";
+    
+    mask.style.transition = "width 0.3s ease-out";
+    mask.style.width = "0px";
+  }
+  
+  setTimeout(() => {
+    btn.style.transition = "none";
+    mask.style.transition = "none";
+  }, 300);
+}
+
+// Mouse events
+btn.addEventListener("mousedown", handleStart);
+document.addEventListener("mousemove", handleMove);
+document.addEventListener("mouseup", handleEnd);
+
+// Touch events
+btn.addEventListener("touchstart", handleStart, { passive: false });
+document.addEventListener("touchmove", handleMove, { passive: false });
+document.addEventListener("touchend", handleEnd);
+
+window.addEventListener("resize", () => {
+  maxDistance = container.clientWidth - btn.clientWidth - 4;
+  btn.style.left = "0px";
+  mask.style.width = "0px";
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Мобильный режим
+    if (window.innerWidth > 768) return;
+
+    const container = document.querySelector(".solutions-container");
+    const items = [...container.querySelectorAll(".solution-item")];
+    const big = container.querySelector(".solution-item-big");
+
+    // Очищаем контейнер
+    container.innerHTML = "";
+    const btnContainer = document.createElement("div");
+    btnContainer.className = "solutions-slider-buttons";
+
+    // Формируем слайды
+    for (let i = 0; i < items.length; i += 2) {
+        console.log(1);
+        const slide = document.createElement("div");
+        slide.className = "mobile-slide";
+
+        if (items[i]) slide.appendChild(items[i].cloneNode(true));
+        slide.appendChild(big.cloneNode(true));
+        if (items[i + 1]) slide.appendChild(items[i + 1].cloneNode(true));
+
+        container.appendChild(slide);
+
+        const btn = document.createElement("button");
+        if (i === 0) btn.classList.add("active");
+        btnContainer.appendChild(btn);
+    }
+
+    container.after(btnContainer);
+
+    const slides = [...container.children];
+    const buttons = [...btnContainer.children];
+
+    // Клики по кнопкам
+    buttons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            container.scrollTo({
+                left: slides[index].offsetLeft,
+                behavior: "smooth"
+            });
+        });
+    });
+
+    // Обновление активной кнопки
+    container.addEventListener("scroll", () => {
+        const activeIndex = Math.round(container.scrollLeft / container.offsetWidth);
+        buttons.forEach((b, i) => {
+            b.classList.toggle("active", i === activeIndex);
+        });
+    });
+});
+    </script>
+</body>
+</html>

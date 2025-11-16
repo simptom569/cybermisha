@@ -1,0 +1,62 @@
+{% load static %}
+<header class="header header-desktop">
+    <div class="header-logo-container">
+        <a href="{% url 'main' %}"><img src="{% static 'img/logo.png' %}" alt="" class="header-logo"></a>
+    </div>
+    <nav class="header-nav">
+        <a href="{% url 'main' %}" class="header-nav-item">
+            <p class="header-nav-item-title">Главная</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="{% url 'about' %}" class="header-nav-item">
+            <p class="header-nav-item-title">Обо мне</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="{% url 'tutorials' %}" class="header-nav-item">
+            <p class="header-nav-item-title">Обучение</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="{% url 'ai-solutions' %}" class="header-nav-item">
+            <p class="header-nav-item-title">AI Решения</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="{% url 'cases' %}" class="header-nav-item">
+            <p class="header-nav-item-title">Кейсы</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="#" class="header-nav-item">
+            <p class="header-nav-item-title">Блог</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="#" class="header-nav-item">
+            <p class="header-nav-item-title">Новости</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+        <a href="{% url 'contact' %}" class="header-nav-item">
+            <p class="header-nav-item-title">Контакты</p>
+            <img src="{% static 'img/header_item_icon.svg' %}" alt="" class="header-nav-item-icon">
+        </a>
+    </nav>
+</header>
+<header class="header-mobile">
+    <div class="mobile-top">
+        <a href="{% url 'main' %}"><img src="{% static 'img/logo.png' %}" alt="logo" class="mobile-logo"></a>
+        <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="{% url 'main' %}" class="mobile-nav-item">Главная <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="{% url 'about' %}" class="mobile-nav-item">Обо мне <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="{% url 'tutorials' %}" class="mobile-nav-item">Обучение <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="{% url 'ai-solutions' %}" class="mobile-nav-item">AI решения <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="{% url 'cases' %}" class="mobile-nav-item">Кейсы <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="#" class="mobile-nav-item">Блог <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="#" class="mobile-nav-item">Новости <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+            <a href="{% url 'contact' %}" class="mobile-nav-item">Контакты <img src="{% static 'img/header_item_icon.svg' %}" alt=""></a>
+        </nav>
+        <button class="mobile-cta">Оставить заявку</button>
+    </div>
+</header>
+
+{% include 'main/_mobile_menu_script.html' %}

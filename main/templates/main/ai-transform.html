@@ -1,0 +1,416 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/ai-transform.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_header.html' %}
+        </div>
+    </div>
+    <main>
+        <div class="wrapper">
+            <img src="{% static 'main/img/hero_back.png' %}" alt="" class="hero-back">
+            <div class="container">
+                <section>
+                    <div class="hero">
+                        <p class="hero-additional">Консалтинговая программа</p>
+                        <p class="hero-title">ИИ-трансформация</p>
+                        <p class="hero-description">программа по ии-трансформации корпоративной культуры и интеграции ии в бизнес-процессы</p>
+                        <button class="hero-but">Оставить заявку</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="info-block">
+                        <div class="info-block-list">
+                            <div class="info-block-item info-block-item-medium info-block-item-one">
+                                <div class="info-block-item-background"></div>
+                                <p class="info-block-item-text">Образование</p>
+                                <div class="info-block-item-description-container">
+                                    <p class="info-block-item-description">Кандидат экономических наук,</br>доцент («Менеджмент»)</p>
+                                    <img src="{% static 'main/img/info_line.svg' %}" alt="" class="info-block-item-description-line">
+                                    <p class="info-block-item-description">MBA, Startup Academy, CDTO - Московская</br>школа управления СКОЛКОВО Опыт</p>
+                                    <img src="{% static 'main/img/info_line.svg' %}" alt="" class="info-block-item-description-line">
+                                    <p class="info-block-item-description">CEO & Founder, Black Mesa IT (2022 - н.в.) -</br>команда 40+ инженеров, корпоративные</br>платформы generative Al</p>
+                                    <img src="{% static 'main/img/info_line.svg' %}" alt="" class="info-block-item-description-line">
+                                    <p class="info-block-item-description">Заведующий кафедрой ИСиТ,</br>Заполярный ГУ (2018-2023) - подготовка</br>ИИ - специалистов, 1 500+ выпускников</p>
+                                    <img src="{% static 'main/img/info_line.svg' %}" alt="" class="info-block-item-description-line">
+                                    <p class="info-block-item-description">10 лет цифровой трансформации в</br>construction-tech, HR-tech, ED-tech,</br>логистке, производстве</p>
+                                </div>
+                            </div>
+                            <div class="info-block-item info-block-item-min info-block-item-two">
+                                <div class="info-block-item-background"></div>
+                                <p class="info-block-item-text">Достижения</p>
+                                <div class="info-block-item-description-container info-block-item-description-container-list">
+                                    <ul>
+                                        <li class="info-block-item-description">Нагрудный знак Минобрнауки РФ «Молодой учёный»</li>
+                                        <li class="info-block-item-description">Резидент Фонда «Сколково» (IT-кластер)</li>
+                                        <li class="info-block-item-description">Обучил более 3 000 сотрудников ведущих компаний принципам и практикам Generative Al</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block-list">
+                            <div class="info-block-container">
+                                <img src="{% static 'main/img/info_block.png' %}" alt="" class="info-block-item-poster">
+                                <div class="info-block-item info-block-item-max info-block-item-three">
+                                    <div class="info-block-item-background"></div>
+                                    <div class="info-block-item-max-head">
+                                        <p class="info-block-item-max-head-title">Петухов Михаил Вадимович</p>
+                                    </div>
+                                    <div class="info-block-item-description-container info-block-item-description-container-list">
+                                        <ul>
+                                            <li class="info-block-item-description">предприниматель с 10-летним опытом цифровой трансформации;</li>
+                                            <li class="info-block-item-description">кандидат экономических наук;</li>
+                                            <li class="info-block-item-description">основатель Black Mesa IT;</li>
+                                            <li class="info-block-item-description">эксперт Generative Al;</li>
+                                            <li class="info-block-item-description">партнёр Сбера, обучивший более тысячи корпоративных специалистов;</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block-list">
+                            <div class="info-block-item info-block-item-medium info-block-item-four">
+                                <div class="info-block-item-background"></div>
+                                <p class="info-block-item-text">Ключевые проекты</p>
+                                <p class="info-block-item-description"><span>Сбер</span> - партнёр по GenAl, 3 внедрения: RAG-платформа, sales-бот, knowledge-агенты</p>
+                                <p class="info-block-item-description"><span>СИБУР</span> - HR: внедрение платформы управления талантами (-90% времени, +25% релевантных кандидатов)</p>
+                                <p class="info-block-item-description"><span>КОМУС</span> - А-агент для оценки качества работы менеджеров по продажам</p>
+                                <p class="info-block-item-description"><span>Честный знак</span> - корпоративное обучение всех сотрудников GenAl</p>
+                            </div>
+                            <div class="info-block-item info-block-item-min info-block-item-five">
+                                <div class="info-block-item-background"></div>
+                                <p class="info-block-item-text">Экспертиза</p>
+                                <div class="info-block-advantages">
+                                    <div class="info-block-advantage-item">LLM-Ops</div>
+                                    <div class="info-block-advantage-item">Prompt-engineering</div>
+                                    <div class="info-block-advantage-item">Change-management при внедрении Al</div>
+                                    <div class="info-block-advantage-item">Корпоративные GPT-ассистенты и агенты</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="companies">
+                        <div class="companies-head">
+                            <h2 class="companies-title">компании, игнорирующие ии, рискуют потерять позиции на рынке</h2>
+                            <p class="companies-text">Согласно McKinsey* (2023), компании, внедрившие ИИ в ключевые бизнес-процессы, <span>увеличивают производительность на 15-40%</span></br></br>ИИ влияет на аналитику, автоматизацию рутинных задач, персонализацию клиентского опыта, стратегическое планирование</br></br>Откладывание внедрения ИИ снижает адаптивность и скорость принятия решений</br></br>Отставание в автоматизации приводит к увеличению издержек и снижению скорости реакции на рынок</p>
+                        </div>
+                        <p class="companies-description">*В этом отчёте McKinsey оценивает, что внедрение генеративного ИИ может ежегодно приносить мировой экономике от $2,6 до $4,4 триллиона, увеличивая производительность труда на 0,1-0,6 процентных пункта в год до 2040 года, в зависимости от скорости внедрения технологий и перераспределения рабочего времени</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="partners">
+                        <h2 class="partners-title">наши партнеры</h2>
+                        <div class="partners-container">
+                            <img src="{% static 'main/img/partners1.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners2.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners3.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners4.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners5.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners6.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners7.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners8.svg' %}" alt="" class="partner-item">
+                            <img src="{% static 'main/img/partners9.svg' %}" alt="" class="partner-item">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <video src="{% static 'main/video/neuro_noise.mp4' %}" class="graph-background" muted autoplay loop playsinline></video>
+            <div class="container">
+                <section>
+                    <div class="graph">
+                        <h2 class="graph-title">внедрение ии начинается</br>с изменения корпоративной культуры</h2>
+                        <p class="graph-description"><span>Культура</span> - это внутренняя социальная сеть вашей компании</p>
+                        <img src="{% static 'main/img/graph.svg' %}" alt="" class="graph-img">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <section>
+                    <div class="cards">
+                        <div class="cards-container">
+                            <div class="card-item">
+                                <img src="{% static 'main/img/card.png' %}" alt="" class="card-back">
+                                <p class="card-item-title">Эрика</br>Ченовет</p>
+                                <div class="card-item-num-block">
+                                    <p class="card-item-num">3.5%</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="{% static 'main/img/card.png' %}" alt="" class="card-back">
+                                <p class="card-item-title">Эрика</br>Ченовет</p>
+                                <div class="card-item-num-block">
+                                    <p class="card-item-num">3.5%</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <img src="{% static 'main/img/card.png' %}" alt="" class="card-back">
+                                <p class="card-item-title">Эрика</br>Ченовет</p>
+                                <div class="card-item-num-block">
+                                    <p class="card-item-num">3.5%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cards-description"><span>Согласно научным исследованиям</span> (Политехнический институт Ресселаера, Исследования Дэймона Центолы Университет Пенсильвании, правило 3.5% политолога Эрика Ченовет и др.) - <span>небольшая,</br>но решительная группа людей может инициировать масштабные социальные изменения</span></p>
+                    </div>
+                </section>
+                <section>
+                    <div class="transforms">
+                        <h2 class="transforms-title">ии-трансформация</h2>
+                        <div class="transforms-container">
+                            <div class="transform-block">
+                                <img src="{% static 'main/img/transform_card_back.png' %}" alt="" class="transform-back">
+                                <p class="transform-title">Корпоративная инициатива</br>для компаний, стремящихся</br>к прорыву в применении нейросетей:</p>
+                                <p class="transform-description"><span>Цель</span> - перевести бизнес на новый уровень за счёт автоматизации рутинных операций и внедрения</br>ИИ-подходов в ключевые процессы</p>
+                            </div>
+                            <div class="transform-block">
+                                <img src="{% static 'main/img/transform_card_back.png' %}" alt="" class="transform-back">
+                                <p class="transform-title">Корпоративная инициатива</br>для компаний, стремящихся</br>к прорыву в применении нейросетей:</p>
+                                <p class="transform-description"><span>Цель</span> - перевести бизнес на новый уровень за счёт автоматизации рутинных операций и внедрения</br>ИИ-подходов в ключевые процессы</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="specifications">
+                        <h2 class="specifications-title">ключевые характеристики программы</h2>
+                        <div class="specifications-container">
+                            <div class="specification-item">
+                                <p class="specification-item-title">Формат участия</p>
+                                <p class="specification-item-description">Это программа трансформации, в рамках которой вовлекаются как топ-менеджмент, так и сотрудники всех уровней</p>
+                            </div>
+                            <div class="specification-item">
+                                <p class="specification-item-title">Формат участия</p>
+                                <p class="specification-item-description">Это программа трансформации, в рамках которой вовлекаются как топ-менеджмент, так и сотрудники всех уровней</p>
+                            </div>
+                            <div class="specification-item">
+                                <p class="specification-item-title">Формат участия</p>
+                                <p class="specification-item-description">Это программа трансформации, в рамках которой вовлекаются как топ-менеджмент, так и сотрудники всех уровней</p>
+                            </div>
+                            <div class="specification-item-empty">
+                                <img src="{% static 'main/img/info_block.png' %}" alt="" class="specification-item-img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <img src="{% static 'main/img/faq_back.png' %}" alt="" class="faq-back">
+            <div class="faq-gradint"></div>
+            <div class="container">
+                <section>
+                    <div class="projects">
+                        <h2 class="projects-title">Проекты</h2>
+                        <div class="projects-container">
+                            <div class="project-item">
+                                <p class="project-item-title">Осознанное внедрение ИИ в бизнес-практики</p>
+                                <p class="project-item-description">Участники поймут, как работает современный ИИ, включая GPT-модели, агенты и ассистенты, и где они реально применимы.</br>Это обеспечит фундамент для самостоятельного принятия решений</br>о внедрении ИИ-инструмента</p>
+                            </div>
+                            <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                            <div class="project-item">
+                                <p class="project-item-title">Осознанное внедрение ИИ в бизнес-практики</p>
+                                <p class="project-item-description">Участники поймут, как работает современный ИИ, включая GPT-модели, агенты и ассистенты, и где они реально применимы.</br>Это обеспечит фундамент для самостоятельного принятия решений</br>о внедрении ИИ-инструмента</p>
+                            </div>
+                            <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                            <div class="project-item">
+                                <p class="project-item-title">Осознанное внедрение ИИ в бизнес-практики</p>
+                                <p class="project-item-description">Участники поймут, как работает современный ИИ, включая GPT-модели, агенты и ассистенты, и где они реально применимы.</br>Это обеспечит фундамент для самостоятельного принятия решений</br>о внедрении ИИ-инструмента</p>
+                            </div>
+                            <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                            <div class="project-item">
+                                <p class="project-item-title">Осознанное внедрение ИИ в бизнес-практики</p>
+                                <p class="project-item-description">Участники поймут, как работает современный ИИ, включая GPT-модели, агенты и ассистенты, и где они реально применимы.</br>Это обеспечит фундамент для самостоятельного принятия решений</br>о внедрении ИИ-инструмента</p>
+                            </div>
+                            <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                            <div class="project-item">
+                                <p class="project-item-title">Осознанное внедрение ИИ в бизнес-практики</p>
+                                <p class="project-item-description">Участники поймут, как работает современный ИИ, включая GPT-модели, агенты и ассистенты, и где они реально применимы.</br>Это обеспечит фундамент для самостоятельного принятия решений</br>о внедрении ИИ-инструмента</p>
+                            </div>
+                            <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <section>
+                    <div class="plan">
+                        <h2 class="plan-title">план обучения</h2>
+                        <div class="plan-container">
+                            <div class="plan-block">
+                                <div class="plan-head-block">
+                                    <p class="plan-head-title">Введение.</br>Нейросети в бизнесе:</br>ChatGPT-ассистенты и агенты</p>
+                                </div>
+                                <img src="{% static 'main/img/plan_arrow.svg' %}" alt="" class="plan-arrow">
+                                <div class="plan-body-block">
+                                    <p class="plan-body-text">
+                                        <ul>
+                                            <li class="plan-body-text-item">Эволюция, перспективы и разновидности ИИ</li>
+                                            <li class="plan-body-text-item">Как ИИ меняет работу специалистов</li>
+                                            <li class="plan-body-text-item">Ассистенты (assistant approach)</li>
+                                            <li class="plan-body-text-item">Верификация результатов</li>
+                                        </ul>
+                                    </p>
+                                    <p class="plan-body-text">
+                                        <ul>
+                                            <li class="plan-body-text-item">Эволюция, перспективы и разновидности ИИ</li>
+                                            <li class="plan-body-text-item">Как ИИ меняет работу специалистов</li>
+                                            <li class="plan-body-text-item">Ассистенты (assistant approach)</li>
+                                            <li class="plan-body-text-item">Верификация результатов</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan-block">
+                                <div class="plan-head-block">
+                                    <p class="plan-head-title">Введение.</br>Нейросети в бизнесе:</br>ChatGPT-ассистенты и агенты</p>
+                                </div>
+                                <img src="{% static 'main/img/plan_arrow.svg' %}" alt="" class="plan-arrow">
+                                <div class="plan-body-block">
+                                    <p class="plan-body-text">
+                                        <ul>
+                                            <li class="plan-body-text-item">Эволюция, перспективы и разновидности ИИ</li>
+                                            <li class="plan-body-text-item">Как ИИ меняет работу специалистов</li>
+                                            <li class="plan-body-text-item">Ассистенты (assistant approach)</li>
+                                            <li class="plan-body-text-item">Верификация результатов</li>
+                                        </ul>
+                                    </p>
+                                    <p class="plan-body-text">
+                                        <ul>
+                                            <li class="plan-body-text-item">Эволюция, перспективы и разновидности ИИ</li>
+                                            <li class="plan-body-text-item">Как ИИ меняет работу специалистов</li>
+                                            <li class="plan-body-text-item">Ассистенты (assistant approach)</li>
+                                            <li class="plan-body-text-item">Верификация результатов</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan-block">
+                                <div class="plan-head-block">
+                                    <p class="plan-head-title">Введение.</br>Нейросети в бизнесе:</br>ChatGPT-ассистенты и агенты</p>
+                                </div>
+                                <img src="{% static 'main/img/plan_arrow.svg' %}" alt="" class="plan-arrow">
+                                <div class="plan-body-block">
+                                    <p class="plan-body-text">
+                                        <ul>
+                                            <li class="plan-body-text-item">Эволюция, перспективы и разновидности ИИ</li>
+                                            <li class="plan-body-text-item">Как ИИ меняет работу специалистов</li>
+                                            <li class="plan-body-text-item">Ассистенты (assistant approach)</li>
+                                            <li class="plan-body-text-item">Верификация результатов</li>
+                                        </ul>
+                                    </p>
+                                    <p class="plan-body-text">
+                                        <ul>
+                                            <li class="plan-body-text-item">Эволюция, перспективы и разновидности ИИ</li>
+                                            <li class="plan-body-text-item">Как ИИ меняет работу специалистов</li>
+                                            <li class="plan-body-text-item">Ассистенты (assistant approach)</li>
+                                            <li class="plan-body-text-item">Верификация результатов</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="supports">
+                        <h2 class="supports-title">посттренинговая поддержка</h2>
+                        <p class="supports-description">По окончании обучения мы создаём специализированную рабочую группу в корпоративном мессенджере, где в течение определенного времени наши эксперты будут оказывать всестороннюю методическую и техническую поддержку</p>
+                        <div class="tutorials-block-line">
+                            <img src="/static/main/img/tutorials_line_back.png" alt="" class="tutorials-line-back">
+                            <img src="/static/main/img/tutorials_line.svg" alt="" class="tutorials-line">
+                        </div>
+                        <p class="supports-description"><span>В формате оперативных чатов и регулярных видеоконференций мы помогаем:</span></p>
+                        <div class="supports-container">
+                            <div class="support-item">
+                                <p class="support-text">Адаптировать и отлаживать сформированные промты, скрипты и агентные решения под реальные бизнес-задачи</p>
+                            </div>
+                            <div class="support-item">
+                                <p class="support-text">Адаптировать и отлаживать сформированные промты, скрипты и агентные решения под реальные бизнес-задачи</p>
+                            </div>
+                            <div class="support-item">
+                                <p class="support-text">Адаптировать и отлаживать сформированные промты, скрипты и агентные решения под реальные бизнес-задачи</p>
+                            </div>
+                            <div class="support-item">
+                                <p class="support-text">Адаптировать и отлаживать сформированные промты, скрипты и агентные решения под реальные бизнес-задачи</p>
+                            </div>
+                        </div>
+                        <p class="supports-additional">Данная посттренинговая поддержка позволяет уверенно внедрять и развивать ИИ-решения в повседневной деятельности</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="commands">
+                        <h2 class="commands-title">команда проекта</h2>
+                        <div class="commands-container">
+                            <img src="{% static 'main/img/command1.png' %}" alt="" class="command-item">
+                            <img src="{% static 'main/img/command2.png' %}" alt="" class="command-item">
+                            <img src="{% static 'main/img/command3.png' %}" alt="" class="command-item">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="contact">
+                        <h1 class="contact-title">Контакты</h1>
+                        <div class="contacts-blocks">
+                            <div class="contacts-block">
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                            </div>
+                            <div class="contacts-block">
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Адрес</div>
+                                    <div class="contact-item-description">г.Санкт-Петербург</br>у. Рузовская, дом 5, офис 1</div>
+                                </div>
+                                <div class="contact-item-line"></div>
+                            </div>
+                            <div class="contacts-block contacts-block-max">
+                                <div class="contact-item">
+                                    <div class="contact-item-title">Тг-канал Кибер-Миша</div>
+                                    <div class="contact-item-description">@cybermisha_team</div>
+                                </div>
+                                <img src="{% static 'main/img/qr.svg' %}" alt="" class="contact-qr">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_footer.html' %}
+        </div>
+    </div>
+</body>
+</html>

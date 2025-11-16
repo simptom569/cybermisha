@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/cases.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_header.html' %}
+            <main>
+                <div class="cases">
+                    <h1 class="cases-title">Эксперт</br>в <span class="cases-title-gradient">Digital-Маркетинге</span></br>и развитии B2B-компаний</h1>
+                    <div class="cases-line-container">
+                        <img src="{% static 'main/img/hero_eclipse.svg' %}" alt="" class="cases-line">
+                        <img src="{% static 'main/img/hero_eclipse_background.svg' %}" alt="" class="cases-line-back">
+                    </div>
+                    <div class="cases-filters">
+                        <div class="cases-filter-item cases-filter-item-active">Все кейсы</div>
+                        <div class="cases-filter-item">Внедрение AI-решений</div>
+                        <div class="cases-filter-item">Внедрение AI-сотрудников</div>
+                        <div class="cases-filter-item">Обучение</div>
+                    </div>
+                    <div class="cases-block">
+                        <div class="case">
+                            <img src="{% static 'main/img/case_back.png' %}" alt="" class="case-back">
+                            <div class="case-head">
+                                <div class="case-head-block">
+                                    <div class="case-num">
+                                        Кейс 7
+                                        <img src="{% static 'main/img/case_arrow.svg' %}" alt="" class="case-arrow">
+                                    </div>
+                                    <div class="case-name">ии-обслуживание клиентов</div>
+                                </div>
+                                <div class="case-head-block">
+                                    <div class="case-amount">от 3 000 000 руб</div>
+                                    <div class="case-period">от 3 мес</div>
+                                </div>
+                            </div>
+                            <div class="case-body-container">
+                                <div class="case-body">
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Описание</p>
+                                        <p class="case-body-description">Ии-агенты, обеспечивающие автоматизированную поддержку клиентов на 1-й и 2-й линиях, отвечая на типовые запросы, маршрутизируя сложные случаи и предоставляя мгновенную помощь 24/7</p>
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Технологический стек</p>
+                                        <div class="case-body-technologies">
+                                            <div class="case-body-technology">LLM GigaChat</div>
+                                            <div class="case-body-technology">Многоязычные модели</div>
+                                            <div class="case-body-technology">Суммирование текста</div>
+                                            <div class="case-body-technology">Адаптация к аудитории</div>
+                                            <div class="case-body-technology">Проверка фактов</div>
+                                        </div>
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Бизнес-эффект</p>
+                                        <p class="case-body-description">Оптимизирует работу службы поддержки, автоматизируя ответы на типовые запросы. Ускоряет разрешение проблем за счет эффективной маршрутизации. Повышает удовлетворенность клиентов благодаря быстрому и точному обслуживанию</p>
+                                    </div>
+                                </div>
+                                <div class="case-body">
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Сравнение удовлетворенности клиентов</p>
+                                        <img src="{% static 'main/img/case7.png' %}" alt="" class="case-body-img">
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Ключевые метрики</p>
+                                        <div class="case-body-metrics">
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <img src="{% static 'main/img/case_back.png' %}" alt="" class="case-back">
+                            <div class="case-head">
+                                <div class="case-head-block">
+                                    <div class="case-num">
+                                        Кейс 7
+                                        <img src="{% static 'main/img/case_arrow.svg' %}" alt="" class="case-arrow">
+                                    </div>
+                                    <div class="case-name">ии-обслуживание клиентов</div>
+                                </div>
+                                <div class="case-head-block">
+                                    <div class="case-amount">от 3 000 000 руб</div>
+                                    <div class="case-period">от 3 мес</div>
+                                </div>
+                            </div>
+                            <div class="case-body-container">
+                                <div class="case-body">
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Описание</p>
+                                        <p class="case-body-description">Ии-агенты, обеспечивающие автоматизированную поддержку клиентов на 1-й и 2-й линиях, отвечая на типовые запросы, маршрутизируя сложные случаи и предоставляя мгновенную помощь 24/7</p>
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Технологический стек</p>
+                                        <div class="case-body-technologies">
+                                            <div class="case-body-technology">LLM GigaChat</div>
+                                            <div class="case-body-technology">Многоязычные модели</div>
+                                            <div class="case-body-technology">Суммирование текста</div>
+                                            <div class="case-body-technology">Адаптация к аудитории</div>
+                                            <div class="case-body-technology">Проверка фактов</div>
+                                        </div>
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Бизнес-эффект</p>
+                                        <p class="case-body-description">Оптимизирует работу службы поддержки, автоматизируя ответы на типовые запросы. Ускоряет разрешение проблем за счет эффективной маршрутизации. Повышает удовлетворенность клиентов благодаря быстрому и точному обслуживанию</p>
+                                    </div>
+                                </div>
+                                <div class="case-body">
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Сравнение удовлетворенности клиентов</p>
+                                        <img src="{% static 'main/img/case7.png' %}" alt="" class="case-body-img">
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Ключевые метрики</p>
+                                        <div class="case-body-metrics">
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <img src="{% static 'main/img/case_back.png' %}" alt="" class="case-back">
+                            <div class="case-head">
+                                <div class="case-head-block">
+                                    <div class="case-num">
+                                        Кейс 7
+                                        <img src="{% static 'main/img/case_arrow.svg' %}" alt="" class="case-arrow">
+                                    </div>
+                                    <div class="case-name">ии-обслуживание клиентов</div>
+                                </div>
+                                <div class="case-head-block">
+                                    <div class="case-amount">от 3 000 000 руб</div>
+                                    <div class="case-period">от 3 мес</div>
+                                </div>
+                            </div>
+                            <div class="case-body-container">
+                                <div class="case-body">
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Описание</p>
+                                        <p class="case-body-description">Ии-агенты, обеспечивающие автоматизированную поддержку клиентов на 1-й и 2-й линиях, отвечая на типовые запросы, маршрутизируя сложные случаи и предоставляя мгновенную помощь 24/7</p>
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Технологический стек</p>
+                                        <div class="case-body-technologies">
+                                            <div class="case-body-technology">LLM GigaChat</div>
+                                            <div class="case-body-technology">Многоязычные модели</div>
+                                            <div class="case-body-technology">Суммирование текста</div>
+                                            <div class="case-body-technology">Адаптация к аудитории</div>
+                                            <div class="case-body-technology">Проверка фактов</div>
+                                        </div>
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Бизнес-эффект</p>
+                                        <p class="case-body-description">Оптимизирует работу службы поддержки, автоматизируя ответы на типовые запросы. Ускоряет разрешение проблем за счет эффективной маршрутизации. Повышает удовлетворенность клиентов благодаря быстрому и точному обслуживанию</p>
+                                    </div>
+                                </div>
+                                <div class="case-body">
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Сравнение удовлетворенности клиентов</p>
+                                        <img src="{% static 'main/img/case7.png' %}" alt="" class="case-body-img">
+                                    </div>
+                                    <div class="case-body-block">
+                                        <p class="case-body-title">Ключевые метрики</p>
+                                        <div class="case-body-metrics">
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                            <div class="case-body-metric">
+                                                <img src="{% static 'main/img/metrics.png' %}" alt="" class="case-body-metric-back">
+                                                <p class="case-body-metric-title">70%</p>
+                                                <p class="case-body-metric-description">разрешение запросов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            {% include 'main/_footer.html' %}
+        </div>
+    </div>
+</body>
+</html>
