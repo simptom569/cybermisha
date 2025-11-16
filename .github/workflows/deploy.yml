@@ -93,4 +93,11 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           script: |
             cd ~/cybermisha-app
-            docker-compose ps
+            echo "=== Container Status ==="
+            docker-compose ps -a
+            echo ""
+            echo "=== Web Container Logs ==="
+            docker-compose logs --tail=50 web
+            echo ""
+            echo "=== Nginx Container Logs ==="
+            docker-compose logs --tail=50 nginx
