@@ -257,9 +257,6 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    {% include 'main/_action_form.html' %}
-                </section>
          <div class="wrapper">
         <div class="container">
             <main>
@@ -1085,30 +1082,7 @@
                     </div>
                 </section>
                 <section>
-                    <div class="action-form">
-                        <div class="action-block">
-                            <h2 class="action-title">Связаться со мной</h2>
-                            <div class="form">
-                                <input type="text" class="form-input" name="name" placeholder="имя">
-                                <input type="text" class="form-input" name="company" placeholder="компания">
-                                <input type="email" class="form-input" name="email" placeholder="электронная почта">
-                                <input type="tel" class="form-input" name="number" placeholder="номер телефона">
-                                <textarea name="description" class="form-textarea" placeholder="опишите, чем могу быть полезен"></textarea>
-                                <p class="form-description">нажимая на кнопку отправить, вы даете согласие</br>на обработку персональных данных и соглашаетесь</br>с политикой конфиденциальности</p>
-                                <button class="form-submit">Оставить заявку</button>
-                            </div>
-                        </div>
-                        <div class="action-block">
-                            <img src="{% static 'main/img/action1.png' %}" alt="" class="action-img">
-                            <h2 class="action-title">мои соц.сети</h2>
-                            <div class="action-social">
-                                <img src="{% static 'img/vk.svg' %}" alt="" class="action-soc">
-                                <img src="{% static 'img/telegram.svg' %}" alt="" class="action-soc">
-                                <img src="{% static 'img/whatsapp.svg' %}" alt="" class="action-soc">
-                                <img src="{% static 'img/web.svg' %}" alt="" class="action-soc">
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main/_action_form.html' %}
                 </section>
             </main>
             {% include 'main/_footer.html' %}
@@ -1149,9 +1123,9 @@
         updateSlider(currentIndex);
     }
 
-    // function startAutoSlide() {
-    //     autoSlideInterval = setInterval(nextSlide, 6000);
-    // }
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 6000);
+    }
 
     function stopAutoSlide() {
         clearInterval(autoSlideInterval);
