@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.REMOTE_PORT }}
-          source: "cybermisha.tar.gz,docker-compose.yml"
+          source: "cybermisha.tar.gz,docker-compose.yml,nginx.conf"
           target: "/tmp/cybermisha-deploy"
 
       - name: Deploy on remote server
@@ -49,6 +49,7 @@ jobs:
             # Create app directory if not exists
             mkdir -p ~/cybermisha-app
             mv docker-compose.yml ~/cybermisha-app/
+            mv nginx.conf ~/cybermisha-app/
 
             # Create .env file if not exists
             if [ ! -f ~/cybermisha-app/.env ]; then
@@ -64,16 +65,16 @@ jobs:
             cd ~/cybermisha-app
 
             # Stop and remove old containers
-            docker compose down || true
+            docker-compose down || true
 
             # Start new containers
-            docker compose up -d
+            docker-compose up -d
 
             # Run migrations
-            docker compose exec -T web python manage.py migrate --noinput || true
+            docker-compose exec -T web python manage.py migrate --noinput || true
 
             # Collect static files
-            docker compose exec -T web python manage.py collectstatic --noinput || true
+            docker-compose exec -T web python manage.py collectstatic --noinput || true
 
             # Clean up
             rm -rf /tmp/cybermisha-deploy
@@ -92,4 +93,4 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           script: |
             cd ~/cybermisha-app
-            docker compose ps
+            docker-compose ps
