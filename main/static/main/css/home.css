@@ -1638,7 +1638,7 @@
   .lesson-item-1,
   .lesson-item-3,
   .lesson-item-5 {
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
   }
 
@@ -1646,7 +1646,7 @@
   .lesson-item-4,
   .lesson-item-6 {
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
   }
 }
 
