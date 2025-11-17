@@ -1045,13 +1045,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTranslate = 0;
     let prevTranslate = 0;
     let animationID = 0;
+    let currentSlideHeight = 0;
 
     function updateSlider(index) {
         slidesContainer.style.transform = `translateX(-${index * 100}%)`;
         indicators.forEach((indicator, i) => {
             indicator.classList.toggle('active', i === index);
         });
+        updateSliderHeight(index);
     }
+
+    function updateSliderHeight(index) {
+        const caseElement = slides[index].querySelector('.case');
+        if (caseElement) {
+            const caseHeight = caseElement.offsetHeight;
+            slidesContainer.style.height = `${caseHeight}px`;
+            currentSlideHeight = caseHeight;
+    }
+}
 
     function nextSlide() {
         currentIndex = (currentIndex + 1) % totalSlides;
@@ -1063,9 +1074,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider(currentIndex);
     }
 
-    // function startAutoSlide() {
-    //     autoSlideInterval = setInterval(nextSlide, 6000);
-    // }
+    function startAutoSlide() {
+        // autoSlideInterval = setInterval(nextSlide, 6000);
+    }
 
     function stopAutoSlide() {
         clearInterval(autoSlideInterval);
@@ -1150,6 +1161,11 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlider(index);
             startAutoSlide();
         });
+    });
+
+    // Обновление высоты при изменении размера окна
+    window.addEventListener('resize', () => {
+        updateSliderHeight(currentIndex);
     });
 
     updateSlider(currentIndex);

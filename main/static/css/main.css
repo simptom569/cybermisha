@@ -695,3 +695,8 @@ p, h1, h2, h3, h4, h5 {
 h2::first-letter {
     text-transform: capitalize;
 }
+
+
+textarea {
+    resize: none;
+}
