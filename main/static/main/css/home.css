@@ -174,7 +174,7 @@
     background: #141625;
     width: 627px;
     height: 188px;
-    filter: blur(50px);
+    filter: blur(12px);
 }
 
 .hero-but {
@@ -1702,4 +1702,13 @@
         0px -3.5px 7px 0px rgba(196, 26, 214, 0.5),
         0px 0px 71px 0px rgba(208, 170, 255, 0.5),
         0px 0px 85px 0px rgba(157, 78, 221, 0.3);
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .hero-block-die {
+        display: none;
+    }
 }

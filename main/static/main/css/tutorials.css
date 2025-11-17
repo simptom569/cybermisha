@@ -10,7 +10,7 @@ main {
 
 .hero {
     padding-top: 24px;
-    padding-bottom: 87px;
+    padding-bottom: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -167,6 +167,8 @@ main {
     line-height: 1.2;
     letter-spacing: -0.05em;
     color: #ffffff;
+    z-index: 2;
+    position: relative;
 }
 
 .about-blocks {
