@@ -1310,7 +1310,7 @@ ul, li {
 /* --- 768px (смартфоны в гориз.) --- */
 @media (max-width: 768px) {
     .about-title {
-        font-size: 36px;
+        font-size: 33px;
     }
 
     .about-blocks {
@@ -1377,7 +1377,7 @@ ul, li {
 /* --- 480px (маленькие смартфоны) --- */
 @media (max-width: 480px) {
     .about-title {
-        font-size: 30px;
+        font-size: 23px;
         text-align: center;
         line-height: 1.1;
     }
@@ -2272,7 +2272,8 @@ ul, li {
 @media (max-width: 768px) {
     .hero-back {
         bottom: auto;
-        top: 210px;
+        top: 340px;
+        width: 700px;
     }
 
     .hero-but {
