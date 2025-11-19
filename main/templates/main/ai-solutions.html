@@ -16,6 +16,7 @@
         <div class="wrapper">
             <div class="container">
                 {% include 'main/_header.html' %}
+                {% include 'main/_modal_request.html' %}
             </div>
         </div>
     </div>
@@ -60,29 +61,29 @@
                             <p class="choices-title">Искусственный интеллект & БИЗНЕС</p>
                             <div class="choices-container">
                                 <div class="choice-item">
-                                    <img src="{% static 'main/img/hero_choice_item_1.svg' %}" alt="" class="choice-item-icon">
+                                    <img src="{% static 'main/img/gg1.svg' %}" alt="" class="choice-item-icon">
                                     <p class="choice-item-title">Практические</br>кейсы</p>
                                 </div>
                                 <div class="choice-item">
-                                    <img src="{% static 'main/img/hero_choice_item_2.svg' %}" alt="" class="choice-item-icon">
+                                    <img src="{% static 'main/img/gg2.svg' %}" alt="" class="choice-item-icon">
                                     <p class="choice-item-title">Гарантированный рост</br>производительности</p>
                                 </div>
                                 <div class="choice-item">
-                                    <img src="{% static 'main/img/hero_choice_item_3.svg' %}" alt="" class="choice-item-icon">
+                                    <img src="{% static 'main/img/gg3.svg' %}" alt="" class="choice-item-icon">
                                     <p class="choice-item-title">Инженерная экспертиза</br>и поддержка 24/7</p>
                                 </div>
                                 <div class="choice-item">
-                                    <img src="{% static 'main/img/hero_choice_item_4.svg' %}" alt="" class="choice-item-icon">
+                                    <img src="{% static 'main/img/gg4.svg' %}" alt="" class="choice-item-icon">
                                     <p class="choice-item-title">453 347+</p>
                                     <p class="choice-item-title">автоматизированных</br>операций</p>
                                 </div>
                                 <div class="choice-item">
-                                    <img src="{% static 'main/img/hero_choice_item_5.svg' %}" alt="" class="choice-item-icon">
+                                    <img src="{% static 'main/img/gg5.svg' %}" alt="" class="choice-item-icon">
                                     <p class="choice-item-title">30 000+</p>
                                     <p class="choice-item-title">часов клиентского</br>времени сэкономлено</p>
                                 </div>
                                 <div class="choice-item">
-                                    <img src="{% static 'main/img/hero_choice_item_6.svg' %}" alt="" class="choice-item-icon">
+                                    <img src="{% static 'main/img/gg6.svg' %}" alt="" class="choice-item-icon">
                                     <p class="choice-item-title">950 млн ₽</p>
                                     <p class="choice-item-title">дополнительной</br>выручки создано</p>
                                 </div>
@@ -349,13 +350,13 @@
                                 <p class="commands-num">>50 +сотрудников</p>
                                 <div class="commands-categories">
                                     <div class="commands-category">Разработчики</div>
+                                    <div class="commands-category">Аналитики</div>
                                     <div class="commands-category">Дизайнеры</div>
-                                    <div class="commands-category">Аналитики</div>
-                                    <div class="commands-category">Аналитики</div>
-                                    <div class="commands-category">Разработчики</div>
-                                    <div class="commands-category">Дизайнеры</div>
-                                    <div class="commands-category">Аналитики</div>
-                                    <div class="commands-category">Аналитики</div>
+                                    <div class="commands-category">Архитекторы</div>
+                                    <div class="commands-category">Верстальщики</div>
+                                    <div class="commands-category">DEVOPS</div>
+                                    <div class="commands-category">QA - инженеры</div>
+                                    <div class="commands-category">Маркетологи</div>
                                 </div>
                             </div>
                             <div class="commands-block">
@@ -407,18 +408,22 @@
                                     <p class="project-item-title">ИИ-генерация</br>контента</p>
                                     <p class="project-item-description">LLM автоматически генерируют увлекательный контент для маркетинговых кампаний, внутренних коммуникаций, отчётов и резюме, адаптируясь</br>к различным аудиториям и целям</p>
                                 </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
                                 <div class="project-item">
                                     <p class="project-item-title">ИИ-обслуживание</br>клиентов</p>
                                     <p class="project-item-description">ИИ-агенты, обеспечивающие автоматизированную поддержку клиентов</br>на 1-й и 2-й линии, отвечая на типовые запросы, маршрутизируя сложные случаи и предоставляя мгновенную помощь 24/7</p>
                                 </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
                                 <div class="project-item">
                                     <p class="project-item-title">LLM в Legal Tech</p>
                                     <p class="project-item-description">LLM автоматизируют анализ юридических обращений, сравнение документов, генерацию документов по шаблонам и проверку соответствия, значительно ускоряя юридические процессы</p>
                                 </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
                                 <div class="project-item">
                                     <p class="project-item-title">Система отслеживания</br>сотрудников в общепите</p>
                                     <p class="project-item-description">Мультимодальная ИИ-система для мониторинга активности сотрудников</br>в реальном времени, анализа соблюдения стандартов обслуживания</br>и санитарных норм, автоматического составления отчётов о продуктивности</p>
                                 </div>
+                                <img src="{% static 'main/img/project_line.svg' %}" alt="" class="project-line">
                                 <div class="project-item">
                                     <p class="project-item-title">ИИ-аналитика звонков</br>менеджеров</p>
                                     <p class="project-item-description">Интеллектуальная система анализа звонков, определяющая психотипы клиентов и менеджеров, оценивающая соблюдение скриптов, выявляющая лучшие практики и предоставляющая рекомендации по повышению эффективности коммуникаций</p>
@@ -508,7 +513,7 @@
                                         <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
                                     </div>
                                     <div class="faq-answer-wrapper">
-                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                        <p class="faq-answer">Программы рассчитаны на предпринимателей, специалистов, управленцев и команды. Мы проводим как индивидуальное обучение по работе с ИИ, так и корпоративные форматы под задачи бизнеса.</p>
                                     </div>
                                 </div>
                                 <div class="faq-line"></div>
@@ -518,7 +523,7 @@
                                         <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
                                     </div>
                                     <div class="faq-answer-wrapper">
-                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                        <p class="faq-answer">Нет. Методика Михаила адаптирована для любого формата: онлайн курсы по ИИ дают те же результаты, что и офлайн-интенсивы. Везде — живая поддержка, практика и разборы.</p>
                                     </div>
                                 </div>
                                 <div class="faq-line"></div>
@@ -528,7 +533,7 @@
                                         <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
                                     </div>
                                     <div class="faq-answer-wrapper">
-                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                        <p class="faq-answer">Мы работаем с GPT, LLM, RAG, AI-агентами, автоматизацией бизнес-процессов, аналитикой и контент-решениями. Обучение построено на том, что реально используют в бизнесе.</p>
                                     </div>
                                 </div>
                                 <div class="faq-line"></div>
@@ -538,7 +543,7 @@
                                         <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
                                     </div>
                                     <div class="faq-answer-wrapper">
-                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                        <p class="faq-answer">Да, у всех форматов есть сопровождение: менторы, кураторы, чаты, сессии вопросов-ответов. Мы не просто даём курсы по ИИ — мы ведём до результата.</p>
                                     </div>
                                 </div>
                                 <div class="faq-line"></div>
@@ -548,7 +553,7 @@
                                         <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
                                     </div>
                                     <div class="faq-answer-wrapper">
-                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                        <p class="faq-answer">Да. Мы разрабатываем корпоративные курсы по нейросетям и ИИ под конкретную задачу бизнеса: обучение отделов, запуск нейроотделов, автоматизация процессов.</p>
                                     </div>
                                 </div>
                                 <div class="faq-line"></div>
@@ -558,7 +563,7 @@
                                         <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
                                     </div>
                                     <div class="faq-answer-wrapper">
-                                        <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                                        <p class="faq-answer">Вы получите не просто сертификат, а системное понимание, как внедрять ИИ в работу или бизнес. И — останетесь частью профессионального сообщества, где можно расти дальше.</p>
                                     </div>
                                 </div>
                                 <div class="faq-line"></div>
@@ -627,26 +632,6 @@
 
         window.addEventListener('load', updateBorders);
         window.addEventListener('resize', updateBorders);
-
-
-        const burger = document.querySelector('.header-mobile .burger');
-const menu = document.querySelector('.header-mobile .mobile-menu');
-const closeBtn = document.querySelector('.header-mobile .close-btn');
-
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  menu.classList.toggle('active');
-  document.body.classList.toggle('menu-open');
-});
-
-document.querySelectorAll('.mobile-nav-item').forEach(item => {
-  item.addEventListener('click', () => {
-    burger.classList.remove('active');
-    menu.classList.remove('active');
-    document.body.classList.remove('menu-open');
-  });
-});
-
 
 
 

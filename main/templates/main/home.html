@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/Sean-93/newmarquee@v0.9.1/dist/newmarquee-min.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}?v={{ CSS_VERSION }}">
     <link rel="stylesheet" href="{% static 'main/css/home.css' %}?v={{ CSS_VERSION }}">
 </head>
@@ -16,6 +17,10 @@
         <div class="container">
             {% include 'main/_header.html' %}
             {% include 'main/_modal_request.html' %}
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
             <main>
                 <section>
                     <div class="hero">
@@ -54,6 +59,8 @@
                         <div class="hero-block hero-block-min">
                             <img src="{% static 'main/img/hero_block.png' %}" alt="" class="hero-block-img">
                             <div class="hero-block-die"></div>
+                            <div class="hero-block-die1"></div>
+                            <div class="hero-block-die2"></div>
                             <button class="hero-but">Оставить заявку</button>
                         </div>
                     </div>
@@ -153,22 +160,34 @@
                             <img src="{% static 'main/img/test5.svg' %}" alt="" class="lesson-line lesson-line-5"></img>
                             <img src="{% static 'main/img/test6.svg' %}" alt="" class="lesson-line lesson-line-6"></img>
                             <div class="lesson-item lesson-item-1">
-                                <img src="{% static 'main/img/test_block.png' %}" alt="" class="lesson-test">
+                                <a href="{% url 'ai-transform' %}">
+                                    <img src="{% static 'main/img/test_block.png' %}" alt="" class="lesson-test">
+                                </a>
                             </div>
                             <div class="lesson-item lesson-item-2">
-                                <img src="{% static 'main/img/test_block_2.png' %}" alt="" class="lesson-test">
+                                <a href="{% url 'ai-solutions' %}">
+                                    <img src="{% static 'main/img/test_block_2.png' %}" alt="" class="lesson-test">
+                                </a>
                             </div>
                             <div class="lesson-item lesson-item-3">
-                                <img src="{% static 'main/img/test_block_3.png' %}" alt="" class="lesson-test">
+                                <a href="{% url 'tutorials' %}">
+                                    <img src="{% static 'main/img/test_block_3.png' %}" alt="" class="lesson-test">
+                                </a>
                             </div>
                             <div class="lesson-item lesson-item-4">
-                                <img src="{% static 'main/img/test_block_4.png' %}" alt="" class="lesson-test">
+                                <a href="">
+                                    <img src="{% static 'main/img/test_block_4.png' %}" alt="" class="lesson-test">
+                                </a>
                             </div>
                             <div class="lesson-item lesson-item-5">
-                                <img src="{% static 'main/img/test_block_5.png' %}" alt="" class="lesson-test">
+                                <a href="">
+                                    <img src="{% static 'main/img/test_block_5.png' %}" alt="" class="lesson-test">
+                                </a>
                             </div>
                             <div class="lesson-item lesson-item-6">
-                                <img src="{% static 'main/img/test_block_6.png' %}" alt="" class="lesson-test">
+                                <a href="{% url 'consalting' %}">
+                                    <img src="{% static 'main/img/test_block_6.png' %}" alt="" class="lesson-test">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -244,15 +263,31 @@
                                 </div>
                                 <div class="tutorials-mobile-item">
                                     <p class="tutorial-title">мероприятие в сколково, 2023</p>
-                                    <img src="{% static 'main/img/tutorial_img1.png' %}" alt="">
+                                    <img src="{% static 'main/img/tutorial_img2.png' %}" alt="">
                                 </div>
                                 <div class="tutorials-mobile-item">
                                     <p class="tutorial-title">мероприятие в сколково, 2023</p>
-                                    <img src="{% static 'main/img/tutorial_img1.png' %}" alt="">
+                                    <img src="{% static 'main/img/tutorial_img3.png' %}" alt="">
                                 </div>
                                 <div class="tutorials-mobile-item">
                                     <p class="tutorial-title">мероприятие в сколково, 2023</p>
-                                    <img src="{% static 'main/img/tutorial_img1.png' %}" alt="">
+                                    <img src="{% static 'main/img/tutorial_img4.png' %}" alt="">
+                                </div>
+                                <div class="tutorials-mobile-item">
+                                    <p class="tutorial-title">мероприятие в сколково, 2023</p>
+                                    <img src="{% static 'main/img/tutorial_img5.png' %}" alt="">
+                                </div>
+                                <div class="tutorials-mobile-item">
+                                    <p class="tutorial-title">мероприятие в сколково, 2023</p>
+                                    <img src="{% static 'main/img/tutorial_img6.png' %}" alt="">
+                                </div>
+                                <div class="tutorials-mobile-item">
+                                    <p class="tutorial-title">мероприятие в сколково, 2023</p>
+                                    <img src="{% static 'main/img/tutorial_img7.png' %}" alt="">
+                                </div>
+                                <div class="tutorials-mobile-item">
+                                    <p class="tutorial-title">мероприятие в сколково, 2023</p>
+                                    <img src="{% static 'main/img/tutorial_img8.png' %}" alt="">
                                 </div>
                             </div>
 
@@ -265,6 +300,8 @@
                         <h2 class="cases-title">Кейсы</h2>
                         <div class="cases-indecators">
                             <div class="indicator active"></div>
+                            <div class="indicator"></div>
+                            <div class="indicator"></div>
                             <div class="indicator"></div>
                             <div class="indicator"></div>
                             <div class="indicator"></div>
@@ -998,6 +1035,32 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="reviews-but-container">
+                            <button class="reviews-but cases-but-prev">
+                                <img src="/static/img/prev_arrow.svg" alt="" class="reviews-but-prev-icon">
+                            </button>
+                            <button class="reviews-but cases-but-next">
+                                <img src="/static/img/next_arrow.svg" alt="" class="reviews-but-next-icon">
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="marquee">
+                        <new-marquee speed="40" direction="right" pauseonhover="true">
+                            <div style="display: flex; align-items: center;">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                                <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                            </div>
+                        </new-marquee>
                     </div>
                 </section>
                 <section>
@@ -1031,6 +1094,8 @@
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.querySelector('.cases-but-prev');
+    const nextBtn = document.querySelector('.cases-but-next');
     const slider = document.querySelector('.slider');
     const slidesContainer = document.querySelector('.slides');
     const slides = document.querySelectorAll('.slide');
@@ -1077,6 +1142,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function startAutoSlide() {
         // autoSlideInterval = setInterval(nextSlide, 6000);
     }
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+    });
 
     function stopAutoSlide() {
         clearInterval(autoSlideInterval);
@@ -1220,7 +1293,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
+customElements.whenDefined('new-marquee').then(() => {
+  // Находим все элементы new-marquee
+  const marquees = document.querySelectorAll('new-marquee');
+  marquees.forEach(marquee => {
+    // Получаем shadow root
+    const shadow = marquee.shadowRoot;
+    if (shadow) {
+      // Находим контейнер внутри shadow DOM
+      const container = shadow.querySelector('.newmarquee-container');
+      if (container) {
+        // Изменяем стиль
+        container.style.overflow = 'visible';
+      }
+    }
+  });
+});
 
 </script>
 </html>

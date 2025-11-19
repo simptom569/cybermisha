@@ -382,7 +382,7 @@
 }
 
 .solutions-container {
-    margin-top: 70px;
+    padding-top: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 235px;
@@ -738,7 +738,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 262px;
+    padding-top: 280px;
     position: relative;
     z-index: 2;
 }
@@ -1227,11 +1227,10 @@
     }
 
     .hero-action-button {
-        margin-top: 28px;
+        margin-top: 35px;
         font-size: 18px;
         padding: 14px 22px;
-        width: 90%;
-        max-width: 320px;
+        width: 100%;
     }
 }
 
@@ -1272,7 +1271,7 @@
 
     .advantages-title {
         font-size: 42px;
-        text-align: center;
+        text-align: left;
     }
 
     .advantages-description {
@@ -1547,7 +1546,7 @@
 
     .advantages-title {
         font-size: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     .advantages-description {
@@ -1588,7 +1587,7 @@
     .advantages-title {
         font-size: 32px;
         line-height: 1.3;
-        text-align: center;
+        text-align: left;
         padding: 0 10px;
     }
 
@@ -1636,7 +1635,7 @@
 
     .process-title {
         font-size: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     .process-container {
@@ -1693,7 +1692,7 @@
 
     .process-title {
         font-size: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     .process-container {
@@ -2104,7 +2103,7 @@
     .services-title {
         margin-top: 100px;
         font-size: 42px;
-        text-align: center;
+        text-align: left;
     }
 
     .services-container {
@@ -2151,7 +2150,7 @@
         margin-top: 70px;
         font-size: 34px;
         line-height: 1.3;
-        text-align: center;
+        text-align: left;
     }
 
     .services-container {
@@ -2171,8 +2170,8 @@
     }
 
     .service-item-icon {
-        width: 22px;
-        height: 22px;
+        width: 36px;
+        height: 36px;
     }
 
     .services-back {
@@ -2215,11 +2214,6 @@
 
     .service-item-title {
         font-size: 17px;
-    }
-
-    .service-item-icon {
-        width: 20px;
-        height: 20px;
     }
 
     .services-back {
@@ -2352,5 +2346,38 @@
     .faq-gradint {
         top: 260px;
         height: 140px;
+    }
+}
+
+.choice-item-icon {
+    border-radius: 100%;
+    box-shadow:
+        0px -5px 15px 1px rgba(255, 255, 255, 0.25),
+        0px -5px 10px 0px rgba(196, 26, 214, 0.5),
+        0px 0px 100px 0px rgba(208, 170, 255, 0.5),
+        0px 0px 120px 0px rgba(157, 78, 221, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero-background {
+        top: 584px;
+        width: 780px;
+    }
+}
+
+@media (max-width: 767px) {
+    .solutions-title {
+        font-size: 32px;
+        line-height: 1.3;
+        text-align: left;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .solution-item:nth-child(2), .solution-item:nth-child(3) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
     }
 }

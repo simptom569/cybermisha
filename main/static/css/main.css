@@ -125,6 +125,10 @@ p, h1, h2, h3, h4, h5 {
     color: #ffffff;
 }
 
+.header-mobile {
+    z-index: 2000;
+}
+
 .action-form {
     margin-top: 215px;
     padding: 50px;
@@ -523,7 +527,7 @@ p, h1, h2, h3, h4, h5 {
         top: 0;
         right: -100%;
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
         background: linear-gradient(to bottom, #151629, #1c1b4b);
         box-shadow: -2px 0 20px rgba(163, 92, 255, 0.3);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -554,7 +558,7 @@ p, h1, h2, h3, h4, h5 {
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 12px;
         padding: 14px 20px;
-        color: #fff;
+        color: #fff !important;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         font-size: 18px;
@@ -563,7 +567,7 @@ p, h1, h2, h3, h4, h5 {
     }
 
     .mobile-nav-item img {
-        width: 18px;
+        width: 20px;
         opacity: 0.7;
         transition: opacity 0.3s ease;
     }
@@ -692,11 +696,84 @@ p, h1, h2, h3, h4, h5 {
 }
 
 
-h2::first-letter {
-    text-transform: capitalize;
+h2 {
+    text-transform: uppercase;
 }
 
 
 textarea {
     resize: none;
+}
+
+
+@media (max-width: 1024px) {
+    .case:has(.rag-process) {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .rag-step {
+        width: 100% !important;
+    }
+
+    .case-body-metrics {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .case-body-block {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .case-case-body-block {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .case-body-metric {
+        max-width: none !important;
+    }
+
+    .case-body-metric-back {
+        width: 100% !important;
+        height: 90px !important;
+        object-fit: fill;
+    }
+
+    .case-head {
+        align-items: flex-start !important;
+    }
+
+    .case-body {
+        text-align: left !important;
+    }
+
+    .case-body-technologies {
+        justify-content: flex-start !important;
+    }
+
+    .case-head-block {
+        justify-content: flex-start !important;
+    }
+}
+
+.case-body-title {
+    text-transform: uppercase !important;
+}
+
+.case-body-list-item-num {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
