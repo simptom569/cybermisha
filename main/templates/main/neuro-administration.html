@@ -1,0 +1,657 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?v={{ CSS_VERSION }}">
+    <link rel="stylesheet" href="{% static 'main/css/neuro-administration.css' %}?v={{ CSS_VERSION }}">
+    <script src="{% static 'main/js/maps-llm-slider.js' %}" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_header.html' %}
+        </div>
+    </div>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <section>
+                    <div class="hero">
+                        <h1 class="hero-title">Нейро-администрация</h1>
+                        <p class="hero-description">Умный администратор для любого бизнеса и сферы услуг</br>Виртуальный AI-администратор, который автоматизирует рутину, консультирует, помогает работать с документами, записывает клиентов и снимает нагрузку с вашей команды - 24/7.</p>
+                        <div class="hero-additionally">
+                            <div class="hero-additionally-container">
+                                <div class="hero-additionally-container-item">
+                                    <p class="hero-additionally-container-item-text">AI-ассистент по юридическим вопросам сам определит сферу права и передаст кейс нужному эксперту</p>
+                                </div>
+                                <div class="hero-additionally-container-item">
+                                    <p class="hero-additionally-container-item-text">AI-ассистент по юридическим вопросам сам определит сферу права и передаст кейс нужному эксперту</p>
+                                </div>
+                                <div class="hero-additionally-container-item">
+                                    <p class="hero-additionally-container-item-text">AI-ассистент по юридическим вопросам сам определит сферу права и передаст кейс нужному эксперту</p>
+                                </div>
+                            </div>
+                            <div class="hero-buttons">
+                                <button class="hero-button hero-button-demo">Запросить демо</button>
+                                <button class="hero-button hero-button-request">Оставить заявку</button>
+                            </div>
+                        </div>
+                        <div class="hero-about-wrapper">
+                            <div class="hero-about-blur hero-about-blur-1"></div>
+                            <div class="hero-about-blur hero-about-blur-2"></div>
+                            <div class="hero-about-container">
+                                <h2 class="hero-about-title">Кто такой</br>нейро-администратор?</h2>
+                            <p class="hero-about-description"><span>Нейро-администратор</span> - это интеллектуальный AI-ассистент, который автоматизирует административные процессы, снижает нагрузку на сотрудников и обеспечивает поддержку бизнеса 24/7.</p>
+                            <div class="hero-about-desc-container hero-about-desc-container-desktop">
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block">
+                                    <p class="hero-about-desc-block-text">В отличие от простых ботов и скриптовых решений, нейро-администратор способен «понимать» суть запроса, классифицировать задачи по отрасли (юриспруденция, стройка, услуги), запускать цепочки действий и даже консультировать по сложным вопросам.</p>
+                                    <div class="hero-about-desc-block-img-block">
+                                        <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img">
+                                        <div class="hero-about-desc-block-grad"></div>
+                                    </div>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block">
+                                    <div class="hero-about-desc-block-img-block">
+                                        <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img image-scale">
+                                        <div class="hero-about-desc-block-grad"></div>
+                                    </div>
+                                    <p class="hero-about-desc-block-text">В AI-администратор берёт на себя приём и обработку заявок, ведение расписания, напоминания, обработку данных, коммуникацию с клиентами и автоматизацию документооборота — всё это быстро, надёжно и без ошибок.</br>В крупных компаниях и холдингах цифровой администратор интегрируется с внутренними системами, CRM и корпоративными порталами, автоматизирует документооборот, контролирует выполнение задач, рассылку уведомлений и помогает поддерживать высокий стандарт сервиса во всех подразделениях.</p>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                            </div>
+                            <div class="hero-about-desc-container hero-about-desc-container-mobile">
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block-mobile">
+                                    <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img-mobile hero-about-desc-block-img-right">
+                                    <p class="hero-about-desc-block-text-mobile">В отличие от простых ботов и скриптовых решений, нейро-администратор способен «понимать» суть запроса, классифицировать задачи по отрасли (юриспруденция, стройка, услуги), запускать цепочки действий и даже консультировать по сложным вопросам.</p>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block-mobile">
+                                    <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img-mobile hero-about-desc-block-img-left image-scale">
+                                    <p class="hero-about-desc-block-text-mobile">В AI-администратор берёт на себя приём и обработку заявок, ведение расписания, напоминания, обработку данных, коммуникацию с клиентами и автоматизацию документооборота — всё это быстро, надёжно и без ошибок. В крупных компаниях и холдингах цифровой администратор интегрируется с внутренними системами, CRM и корпоративными порталами, автоматизирует документооборот, контролирует выполнение задач, рассылку уведомлений и помогает поддерживать высокий стандарт сервиса во всех подразделениях.</p>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                            </div>
+                            <div class="hero-about-desc-button-block">
+                                    <p class="hero-about-desc-button-block-text">Главное преимущество нейро-администратора — универсальность, персонализация и быстрая интеграция. Он помогает сделать больше с теми же ресурсами, повышает эффективность команды и качество сервиса на всех этапах работы.</p>
+                                    <button class="hero-about-desc-button">Оставить заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="how-to-work">
+                        <h2 class="how-to-work-title">Как работает нейро-администратор?</h2>
+                        <p class="how-to-work-description">Современный рынок требует максимальной скорости, качества и масштабируемости. Классические подходы больше не справляются: люди устают, допускают ошибки, задачи растут быстрее, чем штат. Именно здесь нейросотрудники на базе искусственного интеллекта становятся стратегическим преимуществом.</p>
+                        <div class="how-to-work-container-one">
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и “узких мест”</p>
+                            </div>
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и “узких мест”</p>
+                            </div>
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и “узких мест”</p>
+                            </div>
+                        </div>
+                        <div class="how-to-work-container-two">
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и “узких мест”</p>
+                            </div>
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и “узких мест”</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="schemas-blur-container">
+                <div class="schemas-blur1"></div>
+                <div class="schemas-blur2"></div>
+            </div>
+            <div class="container">
+                <section>
+                    <div class="schemas">
+                        <div class="schemas-indicators">
+                            <div class="schemas-indicator active"></div>
+                            <div class="schemas-indicator"></div>
+                            <div class="schemas-indicator"></div>
+                        </div>
+                        <div class="schemas-slider">
+                            <div class="schemas-slides">
+                                <div class="schemas-slide">
+                                    <div class="schemas-item-block">
+                                        <img src="{% static 'main/img/schemas1.png' %}" alt="" class="schemas-item-block-img">
+                                    </div>
+                                </div>
+                                <div class="schemas-slide">
+                                    <div class="schemas-item-block">
+                                        <img src="{% static 'main/img/schemas1.png' %}" alt="" class="schemas-item-block-img">
+                                    </div>
+                                </div>
+                                <div class="schemas-slide">
+                                    <div class="schemas-item-block">
+                                        <img src="{% static 'main/img/schemas1.png' %}" alt="" class="schemas-item-block-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-but-container">
+                            <button class="reviews-but schemas-but-prev">
+                                <img src="/static/img/prev_arrow.svg" alt="" class="reviews-but-prev-icon">
+                            </button>
+                            <button class="reviews-but schemas-but-next">
+                                <img src="/static/img/next_arrow.svg" alt="" class="reviews-but-next-icon">
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+
+                </section>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="schemas-blur-container-two">
+                <div class="schemas-blur1"></div>
+                <div class="schemas-blur2"></div>
+            </div>
+            <div class="container">
+                <section>
+                    <div class="advantages">
+                        <h2 class="advantages-title">Преимущества нейро-администратора</br>для бизнеса</h2>
+                        <div class="advantages-container">
+                            <div class="advantages-item">
+                                <p class="advantages-item-title">Экономия времени и ресурсов</p>
+                                <p class="advantages-item-description">AI-администратор берет на себя рутину: от поиска информации до оформления документов, записи клиентов и приёма заявок. Сотрудники фокусируются</br>на главном, бизнес - на развитии.</p>
+                            </div>
+                            <div class="advantages-item">
+                                <p class="advantages-item-title">Экономия времени и ресурсов</p>
+                                <p class="advantages-item-description">AI-администратор берет на себя рутину: от поиска информации до оформления документов, записи клиентов и приёма заявок. Сотрудники фокусируются</br>на главном, бизнес - на развитии.</p>
+                            </div>
+                            <div class="advantages-item">
+                                <p class="advantages-item-title">Экономия времени и ресурсов</p>
+                                <p class="advantages-item-description">AI-администратор берет на себя рутину: от поиска информации до оформления документов, записи клиентов и приёма заявок. Сотрудники фокусируются</br>на главном, бизнес - на развитии.</p>
+                            </div>
+                            <div class="advantages-item">
+                                <p class="advantages-item-title">Экономия времени и ресурсов</p>
+                                <p class="advantages-item-description">AI-администратор берет на себя рутину: от поиска информации до оформления документов, записи клиентов и приёма заявок. Сотрудники фокусируются</br>на главном, бизнес - на развитии.</p>
+                            </div>
+                            <div class="advantages-item">
+                                <p class="advantages-item-title">Экономия времени и ресурсов</p>
+                                <p class="advantages-item-description">AI-администратор берет на себя рутину: от поиска информации до оформления документов, записи клиентов и приёма заявок. Сотрудники фокусируются</br>на главном, бизнес - на развитии.</p>
+                            </div>
+                            <div class="advantages-item">
+                                <p class="advantages-item-title">Экономия времени и ресурсов</p>
+                                <p class="advantages-item-description">AI-администратор берет на себя рутину: от поиска информации до оформления документов, записи клиентов и приёма заявок. Сотрудники фокусируются</br>на главном, бизнес - на развитии.</p>
+                            </div>
+                        </div>
+                        <div class="advantages-buttons">
+                            <p class="advantages-buttons-text">Мы разрабатываем и внедряем нейроассистентов исключительно под задачи</br>вашего бизнеса, гарантируя прозрачность, безопасность и максимальную</br>эффективность на каждом этапе</p>
+                            <button class="advantages-button">Оставить заявку</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="steps">
+                        <h2 class="steps-title">Как происходит внедрение</h2>
+
+                        <div class="steps-container" data-slider="steps">
+
+                            <div class="step-item">
+                                <div class="step-item-num">01</div>
+                                <p class="step-item-title">Снижение рисков внедрения</p>
+                                <p class="step-item-description">Структурированный подход снижает риск неудачного внедрения до 70% за счёт предварительного анализа и планирования.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">02</div>
+                                <p class="step-item-title">Ускорение внедрения</p>
+                                <p class="step-item-description">Чёткий план действий ускоряет процесс на 40% благодаря оптимизации ресурсов и процессов.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">03</div>
+                                <p class="step-item-title">Расчёт бюджета</p>
+                                <p class="step-item-description">Понимание реальных затрат и рыночных эффектов. Определяется, где можно не платить, а где инвестиции оправданы.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">04</div>
+                                <p class="step-item-title">Обзор инструментов</p>
+                                <p class="step-item-description">Детальный анализ инструментов LLM и рекомендаций для команды и руководства.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">05</div>
+                                <p class="step-item-title">Измеримые результаты</p>
+                                <p class="step-item-description">Система метрик и KPI позволяет объективно оценивать прогресс и эффективность внедрения.</p>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-item-num">06</div>
+                                <p class="step-item-title">Осознанность процессов</p>
+                                <p class="step-item-description">Понимание, где LLM эффективна, а где нужны другие AI-технологии. Чёткое выделение областей применения.</p>
+                            </div>
+                        </div>
+                        <div class="slider-but-container steps-but-container">
+                            <button class="slider-but steps-but-prev">
+                                <img src="{% static 'img/prev_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                            <button class="slider-but steps-but-next">
+                                <img src="{% static 'img/next_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper marquee-wrapper">
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="marquee-track">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                </div>
+                <div class="marquee-track" aria-hidden="true">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                </div>
+                <div class="marquee-track" aria-hidden="true">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper marquee-wrapper marquee-wrapper-reverse">
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="marquee-track marquee-track-reverse">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                </div>
+                <div class="marquee-track marquee-track-reverse" aria-hidden="true">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                </div>
+                <div class="marquee-track marquee-track-reverse" aria-hidden="true">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="parents-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                    <img src="{% static 'main/img/partner1.svg' %}" alt="" class="partners-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <img src="{% static 'main/img/faq_back.png' %}" alt="" class="faq-back">
+        <div class="faq-gradint"></div>
+        <div class="container">
+            <section>
+                <div class="faq">
+                    <h2 class="faq-title">Вопросы и ответы</h2>
+                    <div class="faq-container">
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Нужен ли технический бэкграунд, чтобы пройти обучение по ИИ?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Нет. Все наши курсы по нейросетям и искусственному интеллекту рассчитаны на людей без технического образования. Объясняем сложное простым языком, с акцентом на применение.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Кому подойдёт обучение?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Программы рассчитаны на предпринимателей, специалистов, управленцев и команды. Мы проводим как индивидуальное обучение по работе с ИИ, так и корпоративные форматы под задачи бизнеса.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Есть ли разница между онлайн и офлайн обучением?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Нет. Методика Михаила адаптирована для любого формата: онлайн курсы по ИИ дают те же результаты, что и офлайн-интенсивы. Везде — живая поддержка, практика и разборы.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Какие инструменты мы осваиваем?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Мы работаем с GPT, LLM, RAG, AI-агентами, автоматизацией бизнес-процессов, аналитикой и контент-решениями. Обучение построено на том, что реально используют в бизнесе.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Будет ли поддержка во время обучения?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Да, у всех форматов есть сопровождение: менторы, кураторы, чаты, сессии вопросов-ответов. Мы не просто даём курсы по ИИ — мы ведём до результата.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Можно ли пройти обучение по ИИ для команды целиком?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Да. Мы разрабатываем корпоративные курсы по нейросетям и ИИ под конкретную задачу бизнеса: обучение отделов, запуск нейроотделов, автоматизация процессов.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                        <div class="faq-item">
+                            <div class="faq-text">
+                                <p class="faq-question">Что будет после окончания обучения?</p>
+                                <img src="{% static 'main/img/faq_arrow.svg' %}" alt="" class="faq-icon">
+                            </div>
+                            <div class="faq-answer-wrapper">
+                                <p class="faq-answer">Вы получите не просто сертификат, а системное понимание, как внедрять ИИ в работу или бизнес. И — останетесь частью профессионального сообщества, где можно расти дальше.</p>
+                            </div>
+                        </div>
+                        <div class="faq-line"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <section>
+                {% include 'main/_two_action_form.html' %}
+            </section>
+            {% include 'main/_footer.html' %}
+        </div>
+    </div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.querySelector('.schemas-but-prev');
+    const nextBtn = document.querySelector('.schemas-but-next');
+    const slider = document.querySelector('.schemas-slider');
+    const slidesContainer = document.querySelector('.schemas-slides');
+    const slides = document.querySelectorAll('.schemas-slide');
+    const indicators = document.querySelectorAll('.schemas-indicator');
+    const totalSlides = slides.length;
+
+    let currentIndex = 0;
+    let isDragging = false;
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+
+    function updateSlider(index) {
+        slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+    });
+
+    function touchStart(index) {
+        return function (event) {
+            isDragging = true;
+            startX = getPositionX(event);
+            currentIndex = index;
+            slidesContainer.classList.add('grabbing');
+            animationID = requestAnimationFrame(animation);
+        };
+    }
+
+    function touchMove(event) {
+        if (!isDragging) return;
+        const currentPosition = getPositionX(event);
+        currentTranslate = prevTranslate + currentPosition - startX;
+    }
+
+    function touchEnd() {
+        cancelAnimationFrame(animationID);
+        isDragging = false;
+        slidesContainer.classList.remove('grabbing');
+
+        const movedBy = currentTranslate - prevTranslate;
+
+        if (movedBy < -100 && currentIndex < totalSlides - 1) {
+            currentIndex += 1;
+        }
+
+        if (movedBy > 100 && currentIndex > 0) {
+            currentIndex -= 1;
+        }
+
+        updateSlider(currentIndex);
+        resetTranslate();
+    }
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    function animation() {
+        setSliderPosition();
+        if (isDragging) requestAnimationFrame(animation);
+    }
+
+    function setSliderPosition() {
+        slidesContainer.style.transform = `translateX(${currentTranslate}px)`;
+    }
+
+    function resetTranslate() {
+        prevTranslate = -currentIndex * slider.offsetWidth;
+        currentTranslate = prevTranslate;
+        slidesContainer.style.transition = 'transform 0.3s ease-out';
+        slidesContainer.style.transform = `translateX(${currentTranslate}px)`;
+        setTimeout(() => slidesContainer.style.transition = '', 300);
+    }
+
+    slides.forEach((slide, index) => {
+        const slideImage = slide.querySelector('img');
+        slideImage?.addEventListener('dragstart', e => e.preventDefault());
+
+        slide.addEventListener('mousedown', touchStart(index));
+        slide.addEventListener('mousemove', touchMove);
+        slide.addEventListener('mouseup', touchEnd);
+        slide.addEventListener('mouseleave', () => { if (isDragging) touchEnd(); });
+
+        slide.addEventListener('touchstart', touchStart(index));
+        slide.addEventListener('touchmove', touchMove);
+        slide.addEventListener('touchend', touchEnd);
+    });
+
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentIndex = index;
+            updateSlider(index);
+        });
+    });
+
+    updateSlider(currentIndex);
+});
+
+// FAQ accordion
+const faqItems = document.querySelectorAll('.faq-item');
+
+window.addEventListener('load', () => {
+    faqItems.forEach((item, index) => {
+        const wrapper = item.querySelector('.faq-answer-wrapper');
+        const answer = item.querySelector('.faq-answer');
+
+        const height = answer.offsetHeight;
+        if (index === 0) {
+            wrapper.style.maxHeight = height + 25 + 'px';
+        }
+    });
+});
+
+faqItems.forEach((item, index) => {
+    const faqText = item.querySelector('.faq-text');
+    const wrapper = item.querySelector('.faq-answer-wrapper');
+    const answer = item.querySelector('.faq-answer');
+    const faqIcon = item.querySelector('.faq-icon');
+
+    if (index === 0) {
+        requestAnimationFrame(() => {
+            const height = answer.offsetHeight;
+            wrapper.style.maxHeight = (height + 25) + 'px';
+            faqIcon.classList.add('active');
+        });
+    }
+
+    faqText.addEventListener('click', () => {
+        const isOpen = wrapper.style.maxHeight && wrapper.style.maxHeight !== '0px';
+
+        faqItems.forEach((otherItem) => {
+            if (otherItem !== item) {
+                const otherWrapper = otherItem.querySelector('.faq-answer-wrapper');
+                const otherIcon = otherItem.querySelector('.faq-icon');
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+
+                otherWrapper.style.maxHeight = otherAnswer.offsetHeight + 25 + 'px';
+                setTimeout(() => {
+                    otherWrapper.style.maxHeight = '0px';
+                }, 10);
+                otherIcon.classList.remove('active');
+            }
+        });
+
+        if (isOpen) {
+            wrapper.style.maxHeight = '0px';
+            faqIcon.classList.remove('active');
+        } else {
+            const height = answer.offsetHeight;
+            wrapper.style.maxHeight = height + 25 + 'px';
+            faqIcon.classList.add('active');
+        }
+    });
+});
+</script>
+</html>

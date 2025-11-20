@@ -10,5 +10,6 @@ urlpatterns = [
     path('consalting', views.consalting_page, name='consalting'),
     path('ai-transform', views.ai_transform_page, name='ai-transform'),
     path('about', views.about_page, name='about'),
-    path('maps-llm', views.maps_llm_page, name='maps-llm')
+    path('maps-llm', views.maps_llm_page, name='maps-llm'),
+    path('neuro-administration', views.neuro_administration, name='neuro-administration')
 ]

@@ -27,3 +27,6 @@ def about_page(request):
 
 def maps_llm_page(request):
     return render(request, 'main/maps-llm.html')
+
+def neuro_administration(request):
+    return render(request, 'main/neuro-administration.html')

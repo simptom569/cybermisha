@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/main.css' %}?v={{ CSS_VERSION }}">
     <link rel="stylesheet" href="{% static 'main/css/maps-llm.css' %}?v={{ CSS_VERSION }}">
+    <script src="{% static 'main/js/maps-llm-slider.js' %}" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -133,7 +134,7 @@
                     <div class="steps">
                         <h2 class="steps-title">Преимущества карты внедрения LLM</h2>
 
-                        <div class="steps-container">
+                        <div class="steps-container" data-slider="steps">
 
                             <div class="step-item">
                                 <div class="step-item-num">01</div>
@@ -171,6 +172,14 @@
                                 <p class="step-item-description">Понимание, где LLM эффективна, а где нужны другие AI-технологии. Чёткое выделение областей применения.</p>
                             </div>
                         </div>
+                        <div class="slider-but-container steps-but-container">
+                            <button class="slider-but steps-but-prev">
+                                <img src="{% static 'img/prev_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                            <button class="slider-but steps-but-next">
+                                <img src="{% static 'img/next_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                        </div>
                         <p class="step-description"><span>Ключевая проблема:</span></br></br>Люди не понимают, где LLM работает хорошо, а где плохо. Карта внедрения решает эту проблему через структурированный анализ и планирование</p>
                     </div>
                 </section>
@@ -182,7 +191,7 @@
                             <img class="structure-diagram-img" src="{% static 'main/img/maps-llm.png' %}" alt="">
                         </div>
 
-                        <div class="structure-container">
+                        <div class="structure-container" data-slider="structure">
 
                             <div class="structure-item">
                                 <p class="structure-item-title">Стратегический анализ</p>
@@ -238,10 +247,20 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="slider-but-container structure-but-container">
+                            <button class="slider-but structure-but-prev">
+                                <img src="{% static 'img/prev_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                            <button class="slider-but structure-but-next">
+                                <img src="{% static 'img/next_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                        </div>
                     </div>
                 </section>
                 <section>
-                    <div class="analysis-block">
+                    <div class="analysis-blocks-wrapper">
+                        <div class="analysis-blocks-container" data-slider="analysis">
+                            <div class="analysis-block">
                         <h2 class="analysis-title">Этап 1: Стратегический анализ</h2>
                         <div class="analysis-content">
                             <div class="analysis-left">
@@ -652,6 +671,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="slider-but-container analysis-but-container">
+                    <button class="slider-but analysis-but-prev">
+                        <img src="{% static 'img/prev_arrow.svg' %}" alt="" class="slider-but-icon">
+                    </button>
+                    <button class="slider-but analysis-but-next">
+                        <img src="{% static 'img/next_arrow.svg' %}" alt="" class="slider-but-icon">
+                    </button>
+                </div>
                 </section>
                 <section>
                     <div class="integrations">
@@ -840,7 +868,7 @@
                 <section>
                     <div class="commands">
                         <h2 class="commands-title">команда проекта</h2>
-                        <div class="commands-container">
+                        <div class="commands-container" data-slider="commands">
                             <div class="commands-item">
                                 <img src="{% static 'main/img/command1.svg' %}" alt="" class="command-img">
                             </div>
@@ -850,6 +878,14 @@
                             <div class="commands-item">
                                 <img src="{% static 'main/img/command3.svg' %}" alt="" class="command-img">
                             </div>
+                        </div>
+                        <div class="slider-but-container commands-but-container">
+                            <button class="slider-but commands-but-prev">
+                                <img src="{% static 'img/prev_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
+                            <button class="slider-but commands-but-next">
+                                <img src="{% static 'img/next_arrow.svg' %}" alt="" class="slider-but-icon">
+                            </button>
                         </div>
                     </div>
                 </section>

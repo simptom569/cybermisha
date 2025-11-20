@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Openers: main CTA buttons
-  const openers = document.querySelectorAll('.form-submit, .hero-but, .test-submit, .mobile-cta');
+  const openers = document.querySelectorAll('.hero-but, .test-submit, .mobile-cta');
   openers.forEach(btn => btn.addEventListener('click', (e) => { e.preventDefault(); openModal(); }));
 
   // Close handlers
