@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?v={{ CSS_VERSION }}">
+    <link rel="stylesheet" href="{% static 'main/css/commerce.css' %}?v={{ CSS_VERSION }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            {% include 'main/_header.html' %}
+        </div>
+    </div>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <section>
+                    <div class="hero">
+                        <img src="{% static 'main/img/commerce_hero.png' %}" alt="" class="hero-back">
+                        <h1 class="hero-title">ИИ для коммерчерческих</br>предложений:</h1>
+                        <p class="hero-description">скорость, персонализация, эффективность</p>
+                        <div class="hero-container">
+                            <div class="hero-item">
+                                <div class="hero-item-icon"></div>
+                                <p class="hero-item-text">AI-инструмент моментально подготавливает, оформляет и генерирует коммерческие предложения, сокращая время работы с документами до минут.</p>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-item-icon"></div>
+                                <p class="hero-item-text">AИскусственный интеллект анализирует ваши данные и требования заказчика, настраивает структуру КП и формулировки под каждый запрос.</p>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-item-icon"></div>
+                                <p class="hero-item-text">Автоматизация убирает рутину и снижает вероятность ошибок: команда фокусируется на результатах, а не на шаблонных операциях.</p>
+                            </div>
+                        </div>
+                        <div class="hero-business">
+                            <h2 class="hero-business-title">Бизнес-эффект:</h2>
+                            <div class="hero-business-container">
+                                <div class="hero-business-item">
+                                    <p class="hero-business-item-title">90%</p>
+                                    <p class="hero-business-item-description">сокращение времени подготовки коммерческих предложений: создание персонализированного КП занимает минуты вместо часов или дней.</p>
+                                </div>
+                                <div class="hero-business-item">
+                                    <p class="hero-business-item-title">90%</p>
+                                    <p class="hero-business-item-description">сокращение времени подготовки коммерческих предложений: создание персонализированного КП занимает минуты вместо часов или дней.</p>
+                                </div>
+                                <div class="hero-business-item">
+                                    <p class="hero-business-item-title">90%</p>
+                                    <p class="hero-business-item-description">сокращение времени подготовки коммерческих предложений: создание персонализированного КП занимает минуты вместо часов или дней.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-about-wrapper">
+                            <div class="hero-about-blur hero-about-blur-1"></div>
+                            <div class="hero-about-blur hero-about-blur-2"></div>
+                            <div class="hero-about-container">
+                                <h2 class="hero-about-title">Кто такой</br>нейро-администратор?</h2>
+                            <p class="hero-about-description"><span>Нейро-администратор</span> - это интеллектуальный AI-ассистент, который автоматизирует административные процессы, снижает нагрузку на сотрудников и обеспечивает поддержку бизнеса 24/7.</p>
+                            <div class="hero-about-desc-container hero-about-desc-container-desktop">
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block">
+                                    <p class="hero-about-desc-block-text">В отличие от простых ботов и скриптовых решений, нейро-администратор способен «понимать» суть запроса, классифицировать задачи по отрасли (юриспруденция, стройка, услуги), запускать цепочки действий и даже консультировать по сложным вопросам.</p>
+                                    <div class="hero-about-desc-block-img-block">
+                                        <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img">
+                                        <div class="hero-about-desc-block-grad"></div>
+                                    </div>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block">
+                                    <div class="hero-about-desc-block-img-block">
+                                        <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img image-scale">
+                                        <div class="hero-about-desc-block-grad"></div>
+                                    </div>
+                                    <p class="hero-about-desc-block-text">В AI-администратор берёт на себя приём и обработку заявок, ведение расписания, напоминания, обработку данных, коммуникацию с клиентами и автоматизацию документооборота — всё это быстро, надёжно и без ошибок.</br>В крупных компаниях и холдингах цифровой администратор интегрируется с внутренними системами, CRM и корпоративными порталами, автоматизирует документооборот, контролирует выполнение задач, рассылку уведомлений и помогает поддерживать высокий стандарт сервиса во всех подразделениях.</p>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                            </div>
+                            <div class="hero-about-desc-container hero-about-desc-container-mobile">
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block-mobile">
+                                    <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img-mobile hero-about-desc-block-img-right">
+                                    <p class="hero-about-desc-block-text-mobile">В отличие от простых ботов и скриптовых решений, нейро-администратор способен «понимать» суть запроса, классифицировать задачи по отрасли (юриспруденция, стройка, услуги), запускать цепочки действий и даже консультировать по сложным вопросам.</p>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                                <div class="hero-about-desc-block-mobile">
+                                    <img src="{% static 'main/img/hero_about_bot.png' %}" alt="" class="hero-about-desc-block-img-mobile hero-about-desc-block-img-left image-scale">
+                                    <p class="hero-about-desc-block-text-mobile">В AI-администратор берёт на себя приём и обработку заявок, ведение расписания, напоминания, обработку данных, коммуникацию с клиентами и автоматизацию документооборота — всё это быстро, надёжно и без ошибок. В крупных компаниях и холдингах цифровой администратор интегрируется с внутренними системами, CRM и корпоративными порталами, автоматизирует документооборот, контролирует выполнение задач, рассылку уведомлений и помогает поддерживать высокий стандарт сервиса во всех подразделениях.</p>
+                                </div>
+                                <div class="hero-about-desc-line"></div>
+                            </div>
+                            <div class="hero-about-desc-button-block">
+                                    <p class="hero-about-desc-button-block-text">Главное преимущество нейро-администратора — универсальность, персонализация и быстрая интеграция. Он помогает сделать больше с теми же ресурсами, повышает эффективность команды и качество сервиса на всех этапах работы.</p>
+                                    <button class="hero-about-desc-button">Оставить заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="how-to-work">
+                        <h2 class="how-to-work-title">Как работает нейро-администратор?</h2>
+                        <p class="how-to-work-description">Современный рынок требует максимальной скорости, качества и масштабируемости. Классические подходы больше не справляются: люди устают, допускают ошибки, задачи растут быстрее, чем штат. Именно здесь нейросотрудники на базе искусственного интеллекта становятся стратегическим преимуществом.</p>
+                        <div class="how-to-work-container-one">
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и "узких мест"</p>
+                            </div>
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и "узких мест"</p>
+                            </div>
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и "узких мест"</p>
+                            </div>
+                        </div>
+                        <div class="how-to-work-container-two">
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и "узких мест"</p>
+                            </div>
+                            <div class="how-to-work-item">
+                                <img src="{% static 'main/img/how_to_work1.svg' %}" alt="" class="how-to-work-icon">
+                                <p class="how-to-work-item-title">Ускорение процессов</p>
+                                <p class="how-to-work-item-description">Виртуальные AI-сотрудники</br>и нейроассистенты работают круглосуточно, обрабатывая заявки, ведя переписку, готовя отчёты и контент</br>без перерывов и "узких мест"</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="whom">
+                        <h2 class="whom-title">кому подходит такое решение?</h2>
+                        <p class="whom-description">ИИ-инструменты для генерации и оформления коммерческих предложений особенно актуальны для компаний, где скорость, персонализация и качество КП напрямую влияют на успех сделок.</p>
+                        <div class="whom-container">
+                            <div class="whom-container-item">
+                                <div class="whom-container-item-block">
+                                    <p class="whom-container-item-block-title">Для B2B‑компаний с интенсивным потоком запросов и тендеров</p>
+                                    <p class="whom-container-item-block-description">IT-компании, интеграторы, дистрибьюторы, консалтинг, логистика, оборудование</p>
+                                </div>
+                                <div class="whom-container-item-img-block">
+                                    <img src="{% static 'main/img/whom_1.png' %}" alt="" class="whom-container-item-img">
+                                </div>
+                            </div>
+                            <div class="whom-container-item">
+                                <div class="whom-container-item-block">
+                                    <p class="whom-container-item-block-title">Для B2B‑компаний с интенсивным потоком запросов и тендеров</p>
+                                    <p class="whom-container-item-block-description">IT-компании, интеграторы, дистрибьюторы, консалтинг, логистика, оборудование</p>
+                                </div>
+                                <div class="whom-container-item-img-block">
+                                    <img src="{% static 'main/img/whom_1.png' %}" alt="" class="whom-container-item-img">
+                                </div>
+                            </div>
+                            <div class="whom-container-item">
+                                <div class="whom-container-item-block">
+                                    <p class="whom-container-item-block-title">Для B2B‑компаний с интенсивным потоком запросов и тендеров</p>
+                                    <p class="whom-container-item-block-description">IT-компании, интеграторы, дистрибьюторы, консалтинг, логистика, оборудование</p>
+                                </div>
+                                <div class="whom-container-item-img-block">
+                                    <img src="{% static 'main/img/whom_1.png' %}" alt="" class="whom-container-item-img">
+                                </div>
+                            </div>
+                            <div class="whom-container-item">
+                                <div class="whom-container-item-block">
+                                    <p class="whom-container-item-block-title">Для B2B‑компаний с интенсивным потоком запросов и тендеров</p>
+                                    <p class="whom-container-item-block-description">IT-компании, интеграторы, дистрибьюторы, консалтинг, логистика, оборудование</p>
+                                </div>
+                                <div class="whom-container-item-img-block">
+                                    <img src="{% static 'main/img/whom_1.png' %}" alt="" class="whom-container-item-img">
+                                </div>
+                            </div>
+                            <div class="whom-container-item">
+                                <div class="whom-container-item-block">
+                                    <p class="whom-container-item-block-title">Для B2B‑компаний с интенсивным потоком запросов и тендеров</p>
+                                    <p class="whom-container-item-block-description">IT-компании, интеграторы, дистрибьюторы, консалтинг, логистика, оборудование</p>
+                                </div>
+                                <div class="whom-container-item-img-block">
+                                    <img src="{% static 'main/img/whom_1.png' %}" alt="" class="whom-container-item-img">
+                                </div>
+                            </div>
+                            <div class="whom-container-item">
+                                <div class="whom-container-item-block">
+                                    <p class="whom-container-item-block-title">Для B2B‑компаний с интенсивным потоком запросов и тендеров</p>
+                                    <p class="whom-container-item-block-description">IT-компании, интеграторы, дистрибьюторы, консалтинг, логистика, оборудование</p>
+                                </div>
+                                <div class="whom-container-item-img-block">
+                                    <img src="{% static 'main/img/whom_1.png' %}" alt="" class="whom-container-item-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

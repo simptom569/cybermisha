@@ -28,5 +28,8 @@ def about_page(request):
 def maps_llm_page(request):
     return render(request, 'main/maps-llm.html')
 
-def neuro_administration(request):
+def neuro_administration_page(request):
     return render(request, 'main/neuro-administration.html')
+
+def commerce_page(request):
+    return render(request, 'main/commerce.html')

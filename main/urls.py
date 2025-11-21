@@ -11,5 +11,6 @@ urlpatterns = [
     path('ai-transform', views.ai_transform_page, name='ai-transform'),
     path('about', views.about_page, name='about'),
     path('maps-llm', views.maps_llm_page, name='maps-llm'),
-    path('neuro-administration', views.neuro_administration, name='neuro-administration')
+    path('neuro-administration', views.neuro_administration_page, name='neuro-administration'),
+    path('commerce', views.commerce_page, name='commerce')
 ]
