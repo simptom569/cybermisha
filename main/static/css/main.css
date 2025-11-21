@@ -777,3 +777,13 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+.solution-spacing {
+    height: 34px;
+}
+
+@media (max-width: 768px) {
+    .solution-spacing {
+        height: 24px;
+    }
+}
